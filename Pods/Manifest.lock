@@ -1,0 +1,34 @@
+PODS:
+  - FontAwesome.swift (1.8.2)
+  - IBAnimatable (6.0.0)
+  - IQKeyboardManagerSwift (6.4.1)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - IBAnimatable
+  - IQKeyboardManagerSwift
+  - RealmSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontAwesome.swift
+    - IBAnimatable
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+
+PODFILE CHECKSUM: 7f20e02dc017f03c53fc8961b87d8920b141faae
+
+COCOAPODS: 1.6.1

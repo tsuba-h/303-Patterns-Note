@@ -1,0 +1,6 @@
+framework module Pods_303_Patterns_Note {
+  umbrella header "Pods-303 Patterns Note-umbrella.h"
+
+  export *
+  module * { export * }
+}
