@@ -564,10 +564,10 @@
                                 <rect key="frame" x="60" y="256" width="400" height="148"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-FX-rpo">
-                                        <rect key="frame" x="8" y="90" width="384" height="50"/>
+                                        <rect key="frame" x="8" y="88.5" width="384" height="51.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-Zp-sZg">
-                                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -597,7 +597,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-zy-7W9">
-                                                <rect key="frame" x="50.5" y="0.0" width="32" height="50"/>
+                                                <rect key="frame" x="50.5" y="0.0" width="32" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -628,7 +628,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqz-O0-f9E">
-                                                <rect key="frame" x="100.5" y="0.0" width="32.5" height="50"/>
+                                                <rect key="frame" x="100.5" y="0.0" width="32.5" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -658,7 +658,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD2-xa-FXs">
-                                                <rect key="frame" x="151" y="0.0" width="32" height="50"/>
+                                                <rect key="frame" x="151" y="0.0" width="32" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -688,7 +688,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-wH-kQu">
-                                                <rect key="frame" x="201" y="0.0" width="32.5" height="50"/>
+                                                <rect key="frame" x="201" y="0.0" width="32.5" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -718,7 +718,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-1M-C6f">
-                                                <rect key="frame" x="251.5" y="0.0" width="32" height="50"/>
+                                                <rect key="frame" x="251.5" y="0.0" width="32" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -748,7 +748,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seU-nE-5D4">
-                                                <rect key="frame" x="301.5" y="0.0" width="32.5" height="50"/>
+                                                <rect key="frame" x="301.5" y="0.0" width="32.5" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -778,7 +778,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Ft-11P">
-                                                <rect key="frame" x="352" y="0.0" width="32" height="50"/>
+                                                <rect key="frame" x="352" y="0.0" width="32" height="51.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -808,15 +808,11 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ZhG-vb-Q30"/>
-                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-YM-8mv">
-                                        <rect key="frame" x="186" y="32" width="30" height="50"/>
+                                        <rect key="frame" x="186" y="28.5" width="30" height="52"/>
                                         <color key="backgroundColor" name="blackKeyboard"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3Hs-At-xeJ"/>
                                             <constraint firstAttribute="width" constant="30" id="Tw4-re-ZId"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -841,10 +837,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-Ss-VBp">
-                                        <rect key="frame" x="84" y="32" width="30" height="50"/>
+                                        <rect key="frame" x="84" y="28.5" width="30" height="52"/>
                                         <color key="backgroundColor" name="blackKeyboard"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3go-pE-dqk"/>
                                             <constraint firstAttribute="width" constant="30" id="thC-Ei-13c"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -869,11 +864,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-Lx-fJs">
-                                        <rect key="frame" x="34" y="32" width="30" height="50"/>
+                                        <rect key="frame" x="34" y="28.5" width="30" height="52"/>
                                         <color key="backgroundColor" name="blackKeyboard"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="TvP-sh-FnJ"/>
-                                            <constraint firstAttribute="height" constant="50" id="dKL-U4-I7k"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -897,10 +891,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-Wb-OTv">
-                                        <rect key="frame" x="287" y="32" width="30" height="50"/>
+                                        <rect key="frame" x="287" y="28.5" width="30" height="52"/>
                                         <color key="backgroundColor" name="blackKeyboard"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="F3V-u4-EUX"/>
                                             <constraint firstAttribute="width" constant="30" id="nrX-Br-urU"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -928,10 +921,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Dc-SlE">
-                                        <rect key="frame" x="236" y="32" width="30" height="50"/>
+                                        <rect key="frame" x="236" y="28.5" width="30" height="52"/>
                                         <color key="backgroundColor" name="blackKeyboard"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3m5-AB-aDX"/>
                                             <constraint firstAttribute="width" constant="30" id="hTO-hR-4pp"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -958,19 +950,25 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="leading" constant="8" id="05F-7a-FZP"/>
+                                    <constraint firstItem="fkm-Wb-OTv" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="0M4-pL-OhC"/>
                                     <constraint firstItem="1bA-Ss-VBp" firstAttribute="leading" secondItem="bcM-Lx-fJs" secondAttribute="trailing" constant="20" id="4Qx-7f-Efw"/>
+                                    <constraint firstItem="0bq-YM-8mv" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="6KH-lj-apb"/>
                                     <constraint firstAttribute="width" constant="400" id="BXd-sw-vET"/>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="it8-Dc-SlE" secondAttribute="bottom" constant="8" id="IJv-Sg-tK2"/>
+                                    <constraint firstItem="bcM-Lx-fJs" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="IWc-ZC-dl3"/>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="fkm-Wb-OTv" secondAttribute="bottom" constant="8" id="L42-sG-ZIH"/>
                                     <constraint firstItem="0bq-YM-8mv" firstAttribute="leading" secondItem="1bA-Ss-VBp" secondAttribute="trailing" constant="72" id="MHt-fe-bab"/>
+                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="NeH-g6-45k"/>
                                     <constraint firstItem="fkm-Wb-OTv" firstAttribute="leading" secondItem="it8-Dc-SlE" secondAttribute="trailing" constant="21" id="Ofg-Yf-fFC"/>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="1bA-Ss-VBp" secondAttribute="bottom" constant="8" id="QQC-tF-47w"/>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="bcM-Lx-fJs" secondAttribute="bottom" constant="8" id="Tiy-7Q-XKb"/>
+                                    <constraint firstItem="it8-Dc-SlE" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="Uio-Yv-ndj"/>
                                     <constraint firstAttribute="bottom" secondItem="Y5L-FX-rpo" secondAttribute="bottom" constant="8" id="fbf-Zi-XaR"/>
                                     <constraint firstItem="bcM-Lx-fJs" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="leading" constant="34" id="gAW-qd-Mhd"/>
                                     <constraint firstAttribute="trailing" secondItem="Y5L-FX-rpo" secondAttribute="trailing" constant="8" id="hyZ-PA-4cw"/>
                                     <constraint firstItem="it8-Dc-SlE" firstAttribute="leading" secondItem="0bq-YM-8mv" secondAttribute="trailing" constant="20" id="i30-AV-MhI"/>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="0bq-YM-8mv" secondAttribute="bottom" constant="8" id="lUH-CI-r4V"/>
+                                    <constraint firstItem="1bA-Ss-VBp" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="xeC-dU-Vok"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o76-7n-5Cb">
@@ -1325,6 +1323,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1F2-Es-ExC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XXo-SD-ovY">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
