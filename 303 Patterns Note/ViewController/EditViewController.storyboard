@@ -561,18 +561,15 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLF-zE-tdu">
-                                <rect key="frame" x="60" y="256" width="400" height="148"/>
+                                <rect key="frame" x="60" y="256" width="484" height="148"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-FX-rpo">
-                                        <rect key="frame" x="8" y="88.5" width="384" height="51.5"/>
+                                        <rect key="frame" x="8" y="89.5" width="468" height="44.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-Zp-sZg">
-                                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
                                                     </userDefinedRuntimeAttribute>
@@ -591,18 +588,18 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="eZ0-Dr-ZnJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-zy-7W9">
-                                                <rect key="frame" x="50.5" y="0.0" width="32" height="51.5"/>
+                                                <rect key="frame" x="60.5" y="0.0" width="43" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
@@ -622,18 +619,18 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="8r3-Wg-9xi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqz-O0-f9E">
-                                                <rect key="frame" x="100.5" y="0.0" width="32.5" height="51.5"/>
+                                                <rect key="frame" x="121.5" y="0.0" width="42.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
                                                     </userDefinedRuntimeAttribute>
@@ -651,6 +648,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -658,12 +658,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD2-xa-FXs">
-                                                <rect key="frame" x="151" y="0.0" width="32" height="51.5"/>
+                                                <rect key="frame" x="182" y="0.0" width="43" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
                                                     </userDefinedRuntimeAttribute>
@@ -681,6 +678,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -688,12 +688,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-wH-kQu">
-                                                <rect key="frame" x="201" y="0.0" width="32.5" height="51.5"/>
+                                                <rect key="frame" x="243" y="0.0" width="42.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
                                                     </userDefinedRuntimeAttribute>
@@ -711,6 +708,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -718,12 +718,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-1M-C6f">
-                                                <rect key="frame" x="251.5" y="0.0" width="32" height="51.5"/>
+                                                <rect key="frame" x="303.5" y="0.0" width="43" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                                         <size key="value" width="0.0" height="3"/>
                                                     </userDefinedRuntimeAttribute>
@@ -741,6 +738,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -748,12 +748,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seU-nE-5D4">
-                                                <rect key="frame" x="301.5" y="0.0" width="32.5" height="51.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="42.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" name="whiteShadow"/>
                                                     </userDefinedRuntimeAttribute>
@@ -771,6 +768,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -778,12 +778,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Ft-11P">
-                                                <rect key="frame" x="352" y="0.0" width="32" height="51.5"/>
+                                                <rect key="frame" x="425" y="0.0" width="43" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                                         <color key="value" name="whiteShadow"/>
                                                     </userDefinedRuntimeAttribute>
@@ -801,6 +798,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -809,176 +809,165 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-YM-8mv">
-                                        <rect key="frame" x="186" y="28.5" width="30" height="52"/>
-                                        <color key="backgroundColor" name="blackKeyboard"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="Tw4-re-ZId"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="blackShadow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="UlO-VC-de6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-Ss-VBp">
-                                        <rect key="frame" x="84" y="28.5" width="30" height="52"/>
-                                        <color key="backgroundColor" name="blackKeyboard"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="thC-Ei-13c"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="blackShadow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="cwJ-Uc-EdX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-Lx-fJs">
-                                        <rect key="frame" x="34" y="28.5" width="30" height="52"/>
-                                        <color key="backgroundColor" name="blackKeyboard"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="TvP-sh-FnJ"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="blackShadow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="esp-L0-BLF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-Wb-OTv">
-                                        <rect key="frame" x="287" y="28.5" width="30" height="52"/>
-                                        <color key="backgroundColor" name="blackKeyboard"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="nrX-Br-urU"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="blackShadow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="HPe-6d-RKo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Dc-SlE">
-                                        <rect key="frame" x="236" y="28.5" width="30" height="52"/>
-                                        <color key="backgroundColor" name="blackKeyboard"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="hTO-hR-4pp"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" name="blackShadow"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.40000000000000002"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="zHu-bv-Ubo"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-WR-Lpc">
+                                        <rect key="frame" x="34" y="29.5" width="412" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-Lx-fJs">
+                                                <rect key="frame" x="0.0" y="0.0" width="43.5" height="44"/>
+                                                <color key="backgroundColor" name="blackKeyboard"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="blackShadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="esp-L0-BLF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-Ss-VBp">
+                                                <rect key="frame" x="61.5" y="0.0" width="43.5" height="44"/>
+                                                <color key="backgroundColor" name="blackKeyboard"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="blackShadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="cwJ-Uc-EdX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-NI-0CH">
+                                                <rect key="frame" x="123" y="0.0" width="43" height="44"/>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-YM-8mv">
+                                                <rect key="frame" x="184" y="0.0" width="43.5" height="44"/>
+                                                <color key="backgroundColor" name="blackKeyboard"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="blackShadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="UlO-VC-de6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Dc-SlE">
+                                                <rect key="frame" x="245.5" y="0.0" width="43.5" height="44"/>
+                                                <color key="backgroundColor" name="blackKeyboard"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="blackShadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="zHu-bv-Ubo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-Wb-OTv">
+                                                <rect key="frame" x="307" y="0.0" width="43.5" height="44"/>
+                                                <color key="backgroundColor" name="blackKeyboard"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" name="blackShadow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.40000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyBoard:" destination="5r8-wn-Bov" eventType="touchUpInside" id="HPe-6d-RKo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-sf-SJN">
+                                                <rect key="frame" x="368.5" y="0.0" width="43.5" height="44"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="leading" constant="8" id="05F-7a-FZP"/>
-                                    <constraint firstItem="fkm-Wb-OTv" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="0M4-pL-OhC"/>
-                                    <constraint firstItem="1bA-Ss-VBp" firstAttribute="leading" secondItem="bcM-Lx-fJs" secondAttribute="trailing" constant="20" id="4Qx-7f-Efw"/>
-                                    <constraint firstItem="0bq-YM-8mv" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="6KH-lj-apb"/>
-                                    <constraint firstAttribute="width" constant="400" id="BXd-sw-vET"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="it8-Dc-SlE" secondAttribute="bottom" constant="8" id="IJv-Sg-tK2"/>
-                                    <constraint firstItem="bcM-Lx-fJs" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="IWc-ZC-dl3"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="fkm-Wb-OTv" secondAttribute="bottom" constant="8" id="L42-sG-ZIH"/>
-                                    <constraint firstItem="0bq-YM-8mv" firstAttribute="leading" secondItem="1bA-Ss-VBp" secondAttribute="trailing" constant="72" id="MHt-fe-bab"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="NeH-g6-45k"/>
-                                    <constraint firstItem="fkm-Wb-OTv" firstAttribute="leading" secondItem="it8-Dc-SlE" secondAttribute="trailing" constant="21" id="Ofg-Yf-fFC"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="1bA-Ss-VBp" secondAttribute="bottom" constant="8" id="QQC-tF-47w"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="bcM-Lx-fJs" secondAttribute="bottom" constant="8" id="Tiy-7Q-XKb"/>
-                                    <constraint firstItem="it8-Dc-SlE" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="Uio-Yv-ndj"/>
-                                    <constraint firstAttribute="bottom" secondItem="Y5L-FX-rpo" secondAttribute="bottom" constant="8" id="fbf-Zi-XaR"/>
-                                    <constraint firstItem="bcM-Lx-fJs" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="leading" constant="34" id="gAW-qd-Mhd"/>
+                                    <constraint firstItem="KYD-WR-Lpc" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="leading" constant="34" id="ANF-uO-giQ"/>
+                                    <constraint firstItem="KYD-WR-Lpc" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.3" id="JXo-8t-g0e"/>
+                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.3" id="NeH-g6-45k"/>
+                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="KYD-WR-Lpc" secondAttribute="bottom" constant="16" id="di5-66-SAY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y5L-FX-rpo" secondAttribute="bottom" constant="14" id="fbf-Zi-XaR"/>
                                     <constraint firstAttribute="trailing" secondItem="Y5L-FX-rpo" secondAttribute="trailing" constant="8" id="hyZ-PA-4cw"/>
-                                    <constraint firstItem="it8-Dc-SlE" firstAttribute="leading" secondItem="0bq-YM-8mv" secondAttribute="trailing" constant="20" id="i30-AV-MhI"/>
-                                    <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="0bq-YM-8mv" secondAttribute="bottom" constant="8" id="lUH-CI-r4V"/>
-                                    <constraint firstItem="1bA-Ss-VBp" firstAttribute="height" secondItem="JLF-zE-tdu" secondAttribute="height" multiplier="0.35" id="xeC-dU-Vok"/>
+                                    <constraint firstAttribute="trailing" secondItem="KYD-WR-Lpc" secondAttribute="trailing" constant="38" id="pLu-Jy-Jpq"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o76-7n-5Cb">
-                                <rect key="frame" x="468" y="260" width="380" height="136"/>
+                                <rect key="frame" x="552" y="260" width="296" height="136"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-LT-ZeO">
-                                        <rect key="frame" x="0.0" y="0.0" width="380" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="64"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-Wk-qur">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="SEQLabel"/>
                                                 <fontDescription key="fontDescription" name="DSEG7Classic-Bold" family="DSEG7 Classic" pointSize="29"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -989,7 +978,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0l-Qj-UKq">
-                                                <rect key="frame" x="97" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="76" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Del">
@@ -1017,7 +1006,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgx-sq-Q0I">
-                                                <rect key="frame" x="194" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="152" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Back">
@@ -1045,7 +1034,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix7-h8-ASz">
-                                                <rect key="frame" x="291" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="228" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Next">
@@ -1075,10 +1064,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-b2-yEN">
-                                        <rect key="frame" x="0.0" y="72" width="380" height="64"/>
+                                        <rect key="frame" x="0.0" y="72" width="296" height="64"/>
                                         <subviews>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn0-EP-UNJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Down">
@@ -1106,7 +1095,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA9-9z-Eas">
-                                                <rect key="frame" x="97" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="76" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="UP">
@@ -1134,7 +1123,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-3b-ch9">
-                                                <rect key="frame" x="194" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="152" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Ac">
@@ -1162,7 +1151,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apw-YY-8vo">
-                                                <rect key="frame" x="291" y="0.0" width="89" height="64"/>
+                                                <rect key="frame" x="228" y="0.0" width="68" height="64"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Slide">
@@ -1218,6 +1207,7 @@
                             <constraint firstAttribute="trailing" secondItem="6kB-SK-sq7" secondAttribute="trailing" constant="8" id="WfN-mi-KwA"/>
                             <constraint firstAttribute="trailing" secondItem="bFL-IR-yFE" secondAttribute="trailing" constant="8" id="Xij-Nx-QIL"/>
                             <constraint firstItem="pZq-84-44g" firstAttribute="leading" secondItem="Qqq-2j-C4K" secondAttribute="trailing" constant="8" id="b4s-uz-phK"/>
+                            <constraint firstItem="JLF-zE-tdu" firstAttribute="width" secondItem="pPS-Vb-1Mo" secondAttribute="width" multiplier="0.54" id="bCE-ea-dJ8"/>
                             <constraint firstItem="JLF-zE-tdu" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="16" id="dab-vu-lUg"/>
                             <constraint firstItem="6kB-SK-sq7" firstAttribute="leading" secondItem="nok-YQ-ICi" secondAttribute="trailing" constant="4" id="ed1-xs-MLP"/>
                             <constraint firstItem="d4C-QO-ypQ" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="g8G-eg-aGj"/>
