@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,11 +28,8 @@
                                     <constraint firstAttribute="height" constant="1" id="mRn-E2-RmU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
-                                <rect key="frame" x="8" y="100" width="165" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="CUa-VW-dY8"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
+                                <rect key="frame" x="72.5" y="100" width="36" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,10 +40,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edi-Wh-vJT">
-                                <rect key="frame" x="40" y="92" width="103" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-3Q-fIh">
                                 <rect key="frame" x="147" y="100" width="30" height="25"/>
                                 <constraints>
@@ -62,22 +55,18 @@
                         <color key="backgroundColor" name="whiteKeyboard"/>
                         <constraints>
                             <constraint firstItem="e5f-3Q-fIh" firstAttribute="top" secondItem="nuM-uY-dfv" secondAttribute="bottom" constant="8" id="5wf-cV-Tj2"/>
+                            <constraint firstItem="o6b-9x-41K" firstAttribute="top" secondItem="nuM-uY-dfv" secondAttribute="bottom" constant="8" id="7ev-Ao-Nub"/>
                             <constraint firstAttribute="trailing" secondItem="wCz-k1-TkI" secondAttribute="trailing" constant="8" id="BHO-Si-Gfb"/>
                             <constraint firstItem="nuM-uY-dfv" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" id="Dyu-Jw-Gv8"/>
-                            <constraint firstItem="edi-Wh-vJT" firstAttribute="top" secondItem="nuM-uY-dfv" secondAttribute="bottom" id="Fgu-v9-ONv"/>
                             <constraint firstAttribute="trailing" secondItem="nuM-uY-dfv" secondAttribute="trailing" id="Fp1-OI-v05"/>
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="8" id="OsW-rw-COP"/>
-                            <constraint firstItem="edi-Wh-vJT" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="40" id="StH-on-D31"/>
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="top" secondItem="8dS-E6-4ik" secondAttribute="top" constant="8" id="TrD-G7-4B7"/>
-                            <constraint firstAttribute="trailing" secondItem="o6b-9x-41K" secondAttribute="trailing" constant="8" id="UMf-lc-oPs"/>
-                            <constraint firstAttribute="bottom" secondItem="o6b-9x-41K" secondAttribute="bottom" constant="8" id="WQC-Ds-Y1o"/>
-                            <constraint firstItem="o6b-9x-41K" firstAttribute="top" secondItem="nuM-uY-dfv" secondAttribute="bottom" constant="8" id="Yym-Qw-3bT"/>
-                            <constraint firstItem="e5f-3Q-fIh" firstAttribute="leading" secondItem="edi-Wh-vJT" secondAttribute="trailing" constant="4" id="ZNz-yo-Qy4"/>
-                            <constraint firstAttribute="bottom" secondItem="edi-Wh-vJT" secondAttribute="bottom" id="cEt-GB-TgG"/>
+                            <constraint firstAttribute="bottom" secondItem="o6b-9x-41K" secondAttribute="bottom" constant="8" id="UzH-S0-psE"/>
+                            <constraint firstItem="o6b-9x-41K" firstAttribute="centerX" secondItem="8dS-E6-4ik" secondAttribute="centerX" id="eCX-vU-mo5"/>
                             <constraint firstAttribute="trailing" secondItem="e5f-3Q-fIh" secondAttribute="trailing" constant="4" id="mHh-py-IY3"/>
                             <constraint firstAttribute="bottom" secondItem="e5f-3Q-fIh" secondAttribute="bottom" constant="8" id="mzm-Zt-Vch"/>
                             <constraint firstItem="nuM-uY-dfv" firstAttribute="top" secondItem="wCz-k1-TkI" secondAttribute="bottom" constant="8" id="pdb-G8-efY"/>
-                            <constraint firstItem="o6b-9x-41K" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="8" id="pks-ld-a2g"/>
+                            <constraint firstItem="e5f-3Q-fIh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o6b-9x-41K" secondAttribute="trailing" constant="8" id="xFE-U2-h01"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
