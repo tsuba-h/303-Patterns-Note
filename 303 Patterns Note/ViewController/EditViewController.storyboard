@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5r8-wn-Bov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5r8-wn-Bov">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,256 +37,251 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bFL-IR-yFE">
-                                <rect key="frame" x="146" y="95" width="742" height="40"/>
+                                <rect key="frame" x="146" y="95" width="742" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMf-Sq-2fH">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3c-gY-uUN">
-                                        <rect key="frame" x="46.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="46.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cj-at-rYu">
-                                        <rect key="frame" x="93" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="93" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRN-M2-iBV">
-                                        <rect key="frame" x="139.5" y="0.0" width="44" height="40"/>
+                                        <rect key="frame" x="139.5" y="0.0" width="44" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slq-Ev-ic3">
-                                        <rect key="frame" x="186.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="186.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG5-vW-82V">
-                                        <rect key="frame" x="233" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="233" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9o-Ic-9mo" userLabel="7">
-                                        <rect key="frame" x="279.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="279.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-O4-ZZC" userLabel="8">
-                                        <rect key="frame" x="326" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="326" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zie-8C-dyJ" userLabel="9">
-                                        <rect key="frame" x="372.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="372.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWo-su-VqR" userLabel="10">
-                                        <rect key="frame" x="419" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="419" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D6-we-FBP" userLabel="11">
-                                        <rect key="frame" x="465.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="465.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-Wa-L9D" userLabel="12">
-                                        <rect key="frame" x="512" y="0.0" width="44" height="40"/>
+                                        <rect key="frame" x="512" y="0.0" width="44" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raZ-Zv-ofU" userLabel="13">
-                                        <rect key="frame" x="559" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="559" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM5-ZH-OUw" userLabel="14">
-                                        <rect key="frame" x="605.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="605.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uk-Ow-czr" userLabel="15">
-                                        <rect key="frame" x="652" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="652" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfm-yO-BAl" userLabel="16">
-                                        <rect key="frame" x="698.5" y="0.0" width="43.5" height="40"/>
+                                        <rect key="frame" x="698.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="aIy-3f-Fu8"/>
-                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PM-Di-oEN">
-                                <rect key="frame" x="52" y="95" width="90" height="40"/>
+                                <rect key="frame" x="52" y="95" width="90" height="35.5"/>
                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="5HL-O7-Xe9"/>
                                     <constraint firstAttribute="width" constant="90" id="Vu5-Kh-Gyy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="blackKeyboard"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nok-YQ-ICi">
-                                <rect key="frame" x="52" y="139" width="90" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nok-YQ-ICi">
+                                <rect key="frame" x="52" y="134.5" width="90" height="35"/>
                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="J2H-Uv-rFA"/>
-                                    <constraint firstAttribute="height" constant="35" id="fV1-Ra-Qjg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="blackKeyboard"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-SK-sq7">
-                                <rect key="frame" x="146" y="139" width="742" height="35"/>
+                                <rect key="frame" x="146" y="134.5" width="742" height="35"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-yW-Y7f">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-yW-Y7f">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-ng-rJF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-ng-rJF">
                                         <rect key="frame" x="46.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-jw-wWY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-jw-wWY">
                                         <rect key="frame" x="93" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-lt-AE0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-lt-AE0">
                                         <rect key="frame" x="139.5" y="0.0" width="44" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jn-2y-OCs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Jn-2y-OCs">
                                         <rect key="frame" x="186.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq5-N9-Tmm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Sq5-N9-Tmm">
                                         <rect key="frame" x="233" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-ff-aMJ" userLabel="7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-ff-aMJ" userLabel="7">
                                         <rect key="frame" x="279.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3y-8s-Pk8" userLabel="8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H3y-8s-Pk8" userLabel="8">
                                         <rect key="frame" x="326" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-Z0-1hC" userLabel="9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JU6-Z0-1hC" userLabel="9">
                                         <rect key="frame" x="372.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-EG-WrC" userLabel="10">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iH9-EG-WrC" userLabel="10">
                                         <rect key="frame" x="419" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtE-qx-Jk9" userLabel="11">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YtE-qx-Jk9" userLabel="11">
                                         <rect key="frame" x="465.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb6-rU-PNT" userLabel="12">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xb6-rU-PNT" userLabel="12">
                                         <rect key="frame" x="512" y="0.0" width="44" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5z-wZ-eps" userLabel="13">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E5z-wZ-eps" userLabel="13">
                                         <rect key="frame" x="559" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-qo-nqw" userLabel="14">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BGb-qo-nqw" userLabel="14">
                                         <rect key="frame" x="605.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5g-gT-8Jw" userLabel="15">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y5g-gT-8Jw" userLabel="15">
                                         <rect key="frame" x="652" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etM-lp-HUP" userLabel="16">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="etM-lp-HUP" userLabel="16">
                                         <rect key="frame" x="698.5" y="0.0" width="43.5" height="35"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -294,146 +289,138 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="k0r-Hn-qOy"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down/Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-QO-ypQ">
-                                <rect key="frame" x="52" y="178" width="90" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down/Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-QO-ypQ">
+                                <rect key="frame" x="52" y="173.5" width="90" height="35.5"/>
                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="0ER-Mp-3gg"/>
-                                    <constraint firstAttribute="height" constant="35" id="mb8-a5-aRb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="blackKeyboard"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NQm-Dq-Q4C">
-                                <rect key="frame" x="146" y="178" width="742" height="35"/>
+                                <rect key="frame" x="146" y="173.5" width="742" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvz-nt-w6T">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qD-fP-0Wo">
-                                        <rect key="frame" x="46.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="46.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whu-iN-5LX">
-                                        <rect key="frame" x="93" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="93" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZX-ic-l8D">
-                                        <rect key="frame" x="139.5" y="0.0" width="44" height="35"/>
+                                        <rect key="frame" x="139.5" y="0.0" width="44" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jai-hQ-fUO">
-                                        <rect key="frame" x="186.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="186.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6Q-ka-MfP">
-                                        <rect key="frame" x="233" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="233" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUy-Xq-wRH" userLabel="7">
-                                        <rect key="frame" x="279.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="279.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUL-GN-BNh" userLabel="8">
-                                        <rect key="frame" x="326" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="326" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oc-wg-YXk" userLabel="9">
-                                        <rect key="frame" x="372.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="372.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf4-mS-qXy" userLabel="10">
-                                        <rect key="frame" x="419" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="419" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLj-TV-Lqp" userLabel="11">
-                                        <rect key="frame" x="465.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="465.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdF-dm-Ewa" userLabel="12">
-                                        <rect key="frame" x="512" y="0.0" width="44" height="35"/>
+                                        <rect key="frame" x="512" y="0.0" width="44" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9O-E1-hoY" userLabel="13">
-                                        <rect key="frame" x="559" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="559" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="grayLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72m-sL-fGz" userLabel="14">
-                                        <rect key="frame" x="605.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="605.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb1-xw-lCh" userLabel="15">
-                                        <rect key="frame" x="652" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="652" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbA-7I-XIL" userLabel="16">
-                                        <rect key="frame" x="698.5" y="0.0" width="43.5" height="35"/>
+                                        <rect key="frame" x="698.5" y="0.0" width="43.5" height="35.5"/>
                                         <color key="backgroundColor" name="whiteKeyboard"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="blackKeyboard"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="DIY-s4-HHF"/>
-                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accent/Slide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2W-6L-Dfo">
-                                <rect key="frame" x="52" y="217" width="90" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accent/Slide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p2W-6L-Dfo">
+                                <rect key="frame" x="52" y="213" width="90" height="35"/>
                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="TKF-BG-14e"/>
                                     <constraint firstAttribute="width" constant="90" id="pQt-sB-gqd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -441,7 +428,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Q3a-he-aoz">
-                                <rect key="frame" x="146" y="217" width="742" height="35"/>
+                                <rect key="frame" x="146" y="213" width="742" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COo-gO-Kkd">
                                         <rect key="frame" x="0.0" y="0.0" width="44.5" height="35"/>
@@ -556,18 +543,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="igs-vL-nKu"/>
-                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLF-zE-tdu">
-                                <rect key="frame" x="60" y="256" width="448" height="148"/>
+                                <rect key="frame" x="60" y="256" width="493" height="148"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-FX-rpo">
-                                        <rect key="frame" x="8" y="89.5" width="432" height="44.5"/>
+                                        <rect key="frame" x="8" y="89.5" width="477" height="44.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXH-Zp-sZg">
-                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -597,7 +581,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-zy-7W9">
-                                                <rect key="frame" x="56.5" y="0.0" width="38" height="44.5"/>
+                                                <rect key="frame" x="62" y="0.0" width="43.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
@@ -628,7 +612,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqz-O0-f9E">
-                                                <rect key="frame" x="112.5" y="0.0" width="38.5" height="44.5"/>
+                                                <rect key="frame" x="123.5" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -658,7 +642,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD2-xa-FXs">
-                                                <rect key="frame" x="169" y="0.0" width="38" height="44.5"/>
+                                                <rect key="frame" x="185.5" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -688,7 +672,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-wH-kQu">
-                                                <rect key="frame" x="225" y="0.0" width="38.5" height="44.5"/>
+                                                <rect key="frame" x="247.5" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -718,7 +702,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-1M-C6f">
-                                                <rect key="frame" x="281.5" y="0.0" width="38" height="44.5"/>
+                                                <rect key="frame" x="309.5" y="0.0" width="43.5" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -748,7 +732,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seU-nE-5D4">
-                                                <rect key="frame" x="337.5" y="0.0" width="38.5" height="44.5"/>
+                                                <rect key="frame" x="371" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -778,7 +762,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-Ft-11P">
-                                                <rect key="frame" x="394" y="0.0" width="38" height="44.5"/>
+                                                <rect key="frame" x="433" y="0.0" width="44" height="44.5"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -808,12 +792,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="12"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-WR-Lpc">
-                                        <rect key="frame" x="34" y="29.5" width="376" height="44"/>
+                                        <rect key="frame" x="34" y="29" width="425" height="44.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-Lx-fJs">
-                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="44.5"/>
                                                 <color key="backgroundColor" name="blackKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -837,7 +822,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-Ss-VBp">
-                                                <rect key="frame" x="56.5" y="0.0" width="38" height="44"/>
+                                                <rect key="frame" x="63.5" y="0.0" width="45" height="44.5"/>
                                                 <color key="backgroundColor" name="blackKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -861,10 +846,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-NI-0CH">
-                                                <rect key="frame" x="112.5" y="0.0" width="38.5" height="44"/>
+                                                <rect key="frame" x="126.5" y="0.0" width="45.5" height="44.5"/>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-YM-8mv">
-                                                <rect key="frame" x="169" y="0.0" width="38" height="44"/>
+                                                <rect key="frame" x="190" y="0.0" width="45" height="44.5"/>
                                                 <color key="backgroundColor" name="blackKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
@@ -888,7 +873,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it8-Dc-SlE">
-                                                <rect key="frame" x="225" y="0.0" width="38.5" height="44"/>
+                                                <rect key="frame" x="253" y="0.0" width="45.5" height="44.5"/>
                                                 <color key="backgroundColor" name="blackKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -912,7 +897,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-Wb-OTv">
-                                                <rect key="frame" x="281.5" y="0.0" width="38" height="44"/>
+                                                <rect key="frame" x="316.5" y="0.0" width="45" height="44.5"/>
                                                 <color key="backgroundColor" name="blackKeyboard"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -939,7 +924,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-sf-SJN">
-                                                <rect key="frame" x="337.5" y="0.0" width="38.5" height="44"/>
+                                                <rect key="frame" x="379.5" y="0.0" width="45.5" height="44.5"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="10"/>
@@ -947,6 +932,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="12"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -957,17 +943,17 @@
                                     <constraint firstItem="Y5L-FX-rpo" firstAttribute="top" secondItem="KYD-WR-Lpc" secondAttribute="bottom" constant="16" id="di5-66-SAY"/>
                                     <constraint firstAttribute="bottom" secondItem="Y5L-FX-rpo" secondAttribute="bottom" constant="14" id="fbf-Zi-XaR"/>
                                     <constraint firstAttribute="trailing" secondItem="Y5L-FX-rpo" secondAttribute="trailing" constant="8" id="hyZ-PA-4cw"/>
-                                    <constraint firstAttribute="trailing" secondItem="KYD-WR-Lpc" secondAttribute="trailing" constant="38" id="pLu-Jy-Jpq"/>
+                                    <constraint firstAttribute="trailing" secondItem="KYD-WR-Lpc" secondAttribute="trailing" constant="34" id="pLu-Jy-Jpq"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o76-7n-5Cb">
-                                <rect key="frame" x="524" y="260" width="324" height="136"/>
+                                <rect key="frame" x="569" y="256" width="275" height="140"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-LT-ZeO">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="66"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-Wk-qur">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="66"/>
                                                 <color key="backgroundColor" name="SEQLabel"/>
                                                 <fontDescription key="fontDescription" name="DSEG7Classic-Bold" family="DSEG7 Classic" pointSize="29"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -978,9 +964,9 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0l-Qj-UKq">
-                                                <rect key="frame" x="83" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="70.5" y="0.0" width="63" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Del">
                                                     <color key="titleColor" name="Deletelabel"/>
                                                 </state>
@@ -1001,12 +987,15 @@
                                                         <real key="value" value="0.20000000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="deleteButton:" destination="5r8-wn-Bov" eventType="touchUpInside" id="q9Z-Do-d8A"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgx-sq-Q0I">
-                                                <rect key="frame" x="166" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="141.5" y="0.0" width="62.5" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Back">
@@ -1034,7 +1023,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix7-h8-ASz">
-                                                <rect key="frame" x="249" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="212" y="0.0" width="63" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Next">
@@ -1064,10 +1053,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-b2-yEN">
-                                        <rect key="frame" x="0.0" y="72" width="324" height="64"/>
+                                        <rect key="frame" x="0.0" y="74" width="275" height="66"/>
                                         <subviews>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn0-EP-UNJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Down">
@@ -1090,12 +1079,15 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="upDownButton:" destination="5r8-wn-Bov" eventType="touchUpInside" id="Zj5-pA-kbt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA9-9z-Eas">
-                                                <rect key="frame" x="83" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="70.5" y="0.0" width="63" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="UP">
@@ -1118,14 +1110,17 @@
                                                         <real key="value" value="0.20000000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="upDownButton:" destination="5r8-wn-Bov" eventType="touchUpInside" id="cvC-SM-7Kf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqu-3b-ch9">
-                                                <rect key="frame" x="166" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="141.5" y="0.0" width="62.5" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Ac">
                                                     <color key="titleColor" name="blackKeyboard"/>
                                                 </state>
@@ -1146,12 +1141,15 @@
                                                         <real key="value" value="0.20000000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="acSlideButton:" destination="5r8-wn-Bov" eventType="touchUpInside" id="eBw-MW-NWa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apw-YY-8vo">
-                                                <rect key="frame" x="249" y="0.0" width="75" height="64"/>
+                                                <rect key="frame" x="212" y="0.0" width="63" height="66"/>
                                                 <color key="backgroundColor" name="whiteKeyboard"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="Slide">
@@ -1174,6 +1172,9 @@
                                                         <real key="value" value="0.20000000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="acSlideButton:" destination="5r8-wn-Bov" eventType="touchUpInside" id="HQn-w9-Bbi"/>
                                                 </connections>
@@ -1185,29 +1186,35 @@
                         </subviews>
                         <color key="backgroundColor" name="backgroundView"/>
                         <constraints>
+                            <constraint firstItem="7PM-Di-oEN" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="08M-hn-lhp"/>
                             <constraint firstItem="NQm-Dq-Q4C" firstAttribute="leading" secondItem="d4C-QO-ypQ" secondAttribute="trailing" constant="4" id="0JF-TH-HjJ"/>
                             <constraint firstItem="pZq-84-44g" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="0p9-QF-rGt"/>
-                            <constraint firstItem="35C-sF-Vgg" firstAttribute="trailing" secondItem="o76-7n-5Cb" secondAttribute="trailing" constant="4" id="3wh-I5-x9I"/>
+                            <constraint firstItem="35C-sF-Vgg" firstAttribute="trailing" secondItem="o76-7n-5Cb" secondAttribute="trailing" constant="8" id="3wh-I5-x9I"/>
+                            <constraint firstItem="NQm-Dq-Q4C" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="6MK-jG-nGb"/>
                             <constraint firstItem="p2W-6L-Dfo" firstAttribute="top" secondItem="d4C-QO-ypQ" secondAttribute="bottom" constant="4" id="6cJ-gf-tGY"/>
+                            <constraint firstItem="nok-YQ-ICi" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="Bp7-qF-wzr"/>
                             <constraint firstItem="Qqq-2j-C4K" firstAttribute="top" secondItem="35C-sF-Vgg" secondAttribute="top" constant="8" id="CHo-Qn-mXc"/>
                             <constraint firstAttribute="trailing" secondItem="Q3a-he-aoz" secondAttribute="trailing" constant="8" id="DGT-9h-Gui"/>
                             <constraint firstItem="NQm-Dq-Q4C" firstAttribute="top" secondItem="6kB-SK-sq7" secondAttribute="bottom" constant="4" id="FLk-aY-CbH"/>
                             <constraint firstItem="bFL-IR-yFE" firstAttribute="leading" secondItem="7PM-Di-oEN" secondAttribute="trailing" constant="4" id="FQM-YI-b72"/>
                             <constraint firstItem="7PM-Di-oEN" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="Fed-fM-FyE"/>
                             <constraint firstAttribute="trailing" secondItem="NQm-Dq-Q4C" secondAttribute="trailing" constant="8" id="Gih-WR-VW4"/>
-                            <constraint firstItem="JLF-zE-tdu" firstAttribute="top" secondItem="p2W-6L-Dfo" secondAttribute="bottom" constant="4" id="Lkd-jm-B8l"/>
+                            <constraint firstItem="JLF-zE-tdu" firstAttribute="top" secondItem="p2W-6L-Dfo" secondAttribute="bottom" constant="8" id="Lkd-jm-B8l"/>
+                            <constraint firstItem="6kB-SK-sq7" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="MB4-kS-mld"/>
                             <constraint firstItem="o76-7n-5Cb" firstAttribute="leading" secondItem="JLF-zE-tdu" secondAttribute="trailing" constant="16" id="O4d-9i-yD9"/>
                             <constraint firstItem="Qqq-2j-C4K" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="QI5-jK-I5X"/>
                             <constraint firstItem="Qqq-2j-C4K" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="Qe9-aq-ju3"/>
                             <constraint firstItem="pZq-84-44g" firstAttribute="top" secondItem="35C-sF-Vgg" secondAttribute="top" constant="8" id="Qvr-kX-YRI"/>
+                            <constraint firstItem="d4C-QO-ypQ" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="RGs-2P-Bhb"/>
                             <constraint firstItem="Q3a-he-aoz" firstAttribute="top" secondItem="NQm-Dq-Q4C" secondAttribute="bottom" constant="4" id="RNs-uT-g0f"/>
+                            <constraint firstItem="p2W-6L-Dfo" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="RhI-YK-UWx"/>
                             <constraint firstItem="7PM-Di-oEN" firstAttribute="top" secondItem="Qqq-2j-C4K" secondAttribute="bottom" constant="8" id="V9O-HV-MWp"/>
                             <constraint firstAttribute="bottom" secondItem="JLF-zE-tdu" secondAttribute="bottom" constant="10" id="VRm-gW-1Rm"/>
                             <constraint firstItem="bFL-IR-yFE" firstAttribute="top" secondItem="Qqq-2j-C4K" secondAttribute="bottom" constant="8" id="WUS-K1-hVF"/>
                             <constraint firstAttribute="trailing" secondItem="6kB-SK-sq7" secondAttribute="trailing" constant="8" id="WfN-mi-KwA"/>
                             <constraint firstAttribute="trailing" secondItem="bFL-IR-yFE" secondAttribute="trailing" constant="8" id="Xij-Nx-QIL"/>
                             <constraint firstItem="pZq-84-44g" firstAttribute="leading" secondItem="Qqq-2j-C4K" secondAttribute="trailing" constant="8" id="b4s-uz-phK"/>
-                            <constraint firstItem="JLF-zE-tdu" firstAttribute="width" secondItem="pPS-Vb-1Mo" secondAttribute="width" multiplier="0.5" id="bCE-ea-dJ8"/>
+                            <constraint firstItem="JLF-zE-tdu" firstAttribute="width" secondItem="pPS-Vb-1Mo" secondAttribute="width" multiplier="0.55" id="bCE-ea-dJ8"/>
                             <constraint firstItem="JLF-zE-tdu" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="16" id="dab-vu-lUg"/>
                             <constraint firstItem="6kB-SK-sq7" firstAttribute="leading" secondItem="nok-YQ-ICi" secondAttribute="trailing" constant="4" id="ed1-xs-MLP"/>
                             <constraint firstItem="d4C-QO-ypQ" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="g8G-eg-aGj"/>
@@ -1216,8 +1223,10 @@
                             <constraint firstItem="Q3a-he-aoz" firstAttribute="leading" secondItem="p2W-6L-Dfo" secondAttribute="trailing" constant="4" id="lNu-ph-Ktf"/>
                             <constraint firstItem="o76-7n-5Cb" firstAttribute="top" secondItem="Q3a-he-aoz" secondAttribute="bottom" constant="8" id="lVY-EW-Dag"/>
                             <constraint firstItem="nok-YQ-ICi" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="plb-3B-riK"/>
+                            <constraint firstItem="bFL-IR-yFE" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="qtB-VX-i79"/>
                             <constraint firstItem="d4C-QO-ypQ" firstAttribute="top" secondItem="nok-YQ-ICi" secondAttribute="bottom" constant="4" id="s8u-AX-Z1E"/>
                             <constraint firstItem="6kB-SK-sq7" firstAttribute="top" secondItem="bFL-IR-yFE" secondAttribute="bottom" constant="4" id="tJt-Nq-Nl0"/>
+                            <constraint firstItem="Q3a-he-aoz" firstAttribute="height" secondItem="pPS-Vb-1Mo" secondAttribute="height" multiplier="0.085" id="w2X-Ln-QFC"/>
                             <constraint firstAttribute="trailing" secondItem="pZq-84-44g" secondAttribute="trailing" constant="8" id="wJ5-L7-r6y"/>
                             <constraint firstItem="pZq-84-44g" firstAttribute="width" secondItem="pPS-Vb-1Mo" secondAttribute="width" multiplier="0.3" id="xLi-M0-dJK"/>
                             <constraint firstItem="p2W-6L-Dfo" firstAttribute="leading" secondItem="35C-sF-Vgg" secondAttribute="leading" constant="8" id="yRm-NH-PlK"/>
