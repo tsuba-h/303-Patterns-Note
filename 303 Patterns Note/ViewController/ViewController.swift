@@ -36,12 +36,15 @@ class ViewController: UIViewController {
         print("sprt:::\(sort)")
         do {
             let realm = try Realm()
+            
+            print("realm保存場所",Realm.Configuration.defaultConfiguration.fileURL!)
             contents = realm.objects(Contents.self).sorted(
                 byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
                 ascending: UserDefaults.standard.bool(forKey: "ascending"))
         } catch {
             print(error)
         }
+        
         collectionView.reloadData()
         if contents.count == 0 {
             notItemView.isHidden = false
@@ -62,6 +65,7 @@ class ViewController: UIViewController {
     @IBAction func editViewSegue(_ sender: Any) {
         let storyboard = UIStoryboard(name: "EditViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        vc.id = Randomize().generate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -96,12 +100,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 sendAcSlide.append(acSlides.acSlide)
             }
             
-            vc.itemCount = indexPath.row
+            vc.itemIndex = indexPath.row
+            vc.id = contents[indexPath.row].id
             vc.name = contents[indexPath.row].name
             vc.days = dateFormatter.string(from: contents[indexPath.row].date)
             vc.note = sendNote
             vc.upDown = sendUpDown
             vc.acSlide = sendAcSlide
+            
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -126,6 +132,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ViewController: CellButtonDelegate {
+    
     func buttonTap(cell: ViewControllerCollectionViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
             let alert = UIAlertController(title: "このデータを削除してもよろしいですが？", message: "", preferredStyle: .alert)

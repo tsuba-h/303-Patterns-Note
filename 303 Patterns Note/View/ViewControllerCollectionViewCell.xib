@@ -28,8 +28,8 @@
                                     <constraint firstAttribute="height" constant="1" id="mRn-E2-RmU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
-                                <rect key="frame" x="72.5" y="100" width="36" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-02-21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
+                                <rect key="frame" x="46.5" y="100" width="88.5" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,10 +41,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-3Q-fIh">
-                                <rect key="frame" x="147" y="100" width="30" height="25"/>
+                                <rect key="frame" x="148" y="100" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="QG9-Xc-s7f"/>
-                                    <constraint firstAttribute="height" constant="25" id="WNy-C9-1pi"/>
+                                    <constraint firstAttribute="width" secondItem="e5f-3Q-fIh" secondAttribute="height" multiplier="1:1" id="1GJ-wD-Ee4"/>
+                                    <constraint firstAttribute="width" constant="25" id="QG9-Xc-s7f">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -62,8 +64,9 @@
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="8" id="OsW-rw-COP"/>
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="top" secondItem="8dS-E6-4ik" secondAttribute="top" constant="8" id="TrD-G7-4B7"/>
                             <constraint firstAttribute="bottom" secondItem="o6b-9x-41K" secondAttribute="bottom" constant="8" id="UzH-S0-psE"/>
-                            <constraint firstItem="o6b-9x-41K" firstAttribute="centerX" secondItem="8dS-E6-4ik" secondAttribute="centerX" id="eCX-vU-mo5"/>
-                            <constraint firstAttribute="trailing" secondItem="e5f-3Q-fIh" secondAttribute="trailing" constant="4" id="mHh-py-IY3"/>
+                            <constraint firstItem="o6b-9x-41K" firstAttribute="centerX" secondItem="8dS-E6-4ik" secondAttribute="centerX" id="XqZ-pD-E6E"/>
+                            <constraint firstItem="o6b-9x-41K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="4" id="jLf-2c-pam"/>
+                            <constraint firstAttribute="trailing" secondItem="e5f-3Q-fIh" secondAttribute="trailing" constant="8" id="mHh-py-IY3"/>
                             <constraint firstAttribute="bottom" secondItem="e5f-3Q-fIh" secondAttribute="bottom" constant="8" id="mzm-Zt-Vch"/>
                             <constraint firstItem="nuM-uY-dfv" firstAttribute="top" secondItem="wCz-k1-TkI" secondAttribute="bottom" constant="8" id="pdb-G8-efY"/>
                             <constraint firstItem="e5f-3Q-fIh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o6b-9x-41K" secondAttribute="trailing" constant="8" id="xFE-U2-h01"/>

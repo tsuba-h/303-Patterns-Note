@@ -20,13 +20,17 @@ class EditViewController: UIViewController {
     var seqCount = 1
     var udCount = 0
     var acSlideCount = [false,false]
+    
+    var id: String?
+    var days: String?
+    var name: String?
     var note = [String](repeating: "", count: 16)
     var upDown = [String](repeating: "", count: 16)
     var acSlide = [String](repeating: "", count: 16)
-    var seqPointColor = UIColor(red: 245/255, green: 130/255, blue: 12/255, alpha: 1)
-    var days: String?
-    var name: String?
     
+    var seqPointColor = UIColor(red: 245/255, green: 130/255, blue: 12/255, alpha: 1)
+    
+
     private let mediumFeedbackGenerator: UIImpactFeedbackGenerator = {
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.prepare()
@@ -41,7 +45,7 @@ class EditViewController: UIViewController {
     
     let realm = try! Realm()
     let contents = Contents()
-    var itemCount: Int?
+    var itemIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +61,7 @@ class EditViewController: UIViewController {
         seqCountLabel.layer.shadowOffset = CGSize(width: 3, height: 6)
     
         
-        if itemCount != nil {
+        if itemIndex != nil {
             for count in 0...15 {
                 noteLabel[count].text = note[count]
                 downUpLabel[count].text = upDown[count]
@@ -295,6 +299,7 @@ class EditViewController: UIViewController {
         if count == 16 {
             noteAlert()
         } else {
+            contents.id = id!
             contents.name = titleText.text!
             contents.date = Date()
             for note in note {
@@ -308,7 +313,7 @@ class EditViewController: UIViewController {
             }
             
             do {
-                if itemCount == nil {
+                if itemIndex == nil {
                     try  realm.write {
                         realm.add(contents)
                     }
@@ -316,14 +321,14 @@ class EditViewController: UIViewController {
                     let results = realm.objects(Contents.self).sorted(
                         byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
                         ascending: UserDefaults.standard.bool(forKey: "ascending"))
-                    print(results[itemCount!])
+                    print(results[itemIndex!])
                     try realm.write {
-                        if let itemCount = itemCount {
+                        if let itemCount = itemIndex {
                             realm.delete(results[itemCount].note)
                             realm.delete(results[itemCount].upDown)
                             realm.delete(results[itemCount].acSlide)
                             realm.delete(results[itemCount])
-                            
+
                             realm.add(contents)
                         }
                     }

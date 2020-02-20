@@ -23,7 +23,7 @@ class ViewControllerCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 23, style: .solid)
+        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
         deleteButton.setTitle(String.fontAwesomeIcon(name: .trashAlt), for: .normal)
     }
 
