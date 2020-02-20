@@ -280,60 +280,63 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
+        var count = 0
+        
         if titleText.text == "" {
             titleAlert()
         } else {
-            var count = 0
-            for noteItem in note {
-                if noteItem == "" {
+            note.forEach { (note) in
+                if note == "" {
                     count += 1
                 }
             }
-            if count == 16 {
-                noteAlert()
-            } else {
-                contents.name = titleText.text!
-                contents.date = Date()
-                for note in note {
-                    contents.note.append(Note(value: ["note":note]))
-                }
-                for upDown in upDown {
-                    contents.upDown.append(UpDown(value: ["updown":upDown]))
-                }
-                for acSlide in acSlide {
-                    contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
-                }
-
-                do {
-                    if itemCount == nil {
-                        try  realm.write {
-                            realm.add(contents)
-                        }
-                    } else {
-                        let results = realm.objects(Contents.self).sorted(
-                            byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
-                            ascending: UserDefaults.standard.bool(forKey: "ascending"))
-                        print(results[itemCount!])
-                        try realm.write {
-                            if let itemCount = itemCount {
-                                realm.delete(results[itemCount].note)
-                                realm.delete(results[itemCount].upDown)
-                                realm.delete(results[itemCount].acSlide)
-                                realm.delete(results[itemCount])
-                                
-                                realm.add(contents)
-                            }
-                        }
-                    }
-                } catch {
-                    print(error)
-                }
-                
-                navigationController?.popViewController(animated: true)
-            }
         }
         
-    }
+        if count == 16 {
+            noteAlert()
+        } else {
+            contents.name = titleText.text!
+            contents.date = Date()
+            for note in note {
+                contents.note.append(Note(value: ["note":note]))
+            }
+            for upDown in upDown {
+                contents.upDown.append(UpDown(value: ["updown":upDown]))
+            }
+            for acSlide in acSlide {
+                contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
+            }
+            
+            do {
+                if itemCount == nil {
+                    try  realm.write {
+                        realm.add(contents)
+                    }
+                } else {
+                    let results = realm.objects(Contents.self).sorted(
+                        byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
+                        ascending: UserDefaults.standard.bool(forKey: "ascending"))
+                    print(results[itemCount!])
+                    try realm.write {
+                        if let itemCount = itemCount {
+                            realm.delete(results[itemCount].note)
+                            realm.delete(results[itemCount].upDown)
+                            realm.delete(results[itemCount].acSlide)
+                            realm.delete(results[itemCount])
+                            
+                            realm.add(contents)
+                        }
+                    }
+                }
+            } catch {
+                print(error)
+            }
+            
+            navigationController?.popViewController(animated: true)
+        }
+        
+    
+}
     
     func titleAlert() {
         let alert = UIAlertController(title: "タイトルを入力してください", message: "", preferredStyle: .alert)
