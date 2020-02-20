@@ -21,7 +21,6 @@ class EditViewController: UIViewController {
     var udCount = 0
     var acSlideCount = [false,false]
     
-    var id: String?
     var days: String?
     var name: String?
     var note = [String](repeating: "", count: 16)
@@ -299,7 +298,7 @@ class EditViewController: UIViewController {
         if count == 16 {
             noteAlert()
         } else {
-            contents.id = id!
+            
             contents.name = titleText.text!
             contents.date = Date()
             for note in note {

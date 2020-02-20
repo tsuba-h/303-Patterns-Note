@@ -65,7 +65,6 @@ class ViewController: UIViewController {
     @IBAction func editViewSegue(_ sender: Any) {
         let storyboard = UIStoryboard(name: "EditViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
-        vc.id = Randomize().generate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -101,7 +100,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             }
             
             vc.itemIndex = indexPath.row
-            vc.id = contents[indexPath.row].id
             vc.name = contents[indexPath.row].name
             vc.days = dateFormatter.string(from: contents[indexPath.row].date)
             vc.note = sendNote

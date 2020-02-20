@@ -11,16 +11,11 @@ import RealmSwift
 
 class Contents: Object {
     
-    @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var date: Date = Date()
     let note = List<Note>()
     let upDown = List<UpDown>()
     let acSlide = List<AcSlide>()
-    
-    override static func primaryKey() -> String? {
-        return "id"
-    }
     
 }
 
