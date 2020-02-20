@@ -45,11 +45,11 @@ class ViewController: UIViewController {
             print(error)
         }
         
-        collectionView.reloadData()
         if contents.count == 0 {
             notItemView.isHidden = false
         } else {
             notItemView.isHidden = true
+            collectionView.reloadData()
         }
     }
     
