@@ -348,18 +348,6 @@ class EditViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-    
-    func confirmation() {
-        print(
-            "seqCount",seqCount,
-            "seqKey",note[seqCount - 1],
-            "acslidecount",acSlideCount,
-            "udcount",udCount
-        )
-        print(note)
-        print(upDown)
-        print(acSlide)
-    }
 }
 
 
