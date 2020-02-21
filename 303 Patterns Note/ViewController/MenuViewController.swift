@@ -65,7 +65,7 @@ class MenuViewController: UIViewController {
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,6 +75,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 2
         case 2:
+            return 1
+        case 3:
             return 1
         default:
             return 0
@@ -127,6 +129,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
                 return cell
             }
         case 2:
+            cell.titleLabel.text = "サーバーに保存"
+            cell.checkImage.isHidden = true
+        case 3:
             cell.titleLabel.text = "データの全削除"
             cell.checkImage.isHidden = true
         default:
@@ -222,6 +227,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return "表示数"
         case 2:
+            return "サーバーに保存"
+        case 3:
             return "データの削除"
         default:
             return ""
