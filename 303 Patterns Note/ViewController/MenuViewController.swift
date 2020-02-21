@@ -13,6 +13,7 @@ protocol CollectionViewReloadDelegate {
     func reload()
     func sorted()
     func layout()
+    func firebaseVCSegue()
 }
 
 class MenuViewController: UIViewController {
@@ -172,6 +173,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
                 break
             }
         case 2:
+            self.delegate.firebaseVCSegue()
+            self.tableViewDismiss()
+        case 3:
             do {
                 let realm = try Realm()
                 contents = realm.objects(Contents.self)

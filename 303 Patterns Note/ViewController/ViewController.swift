@@ -163,6 +163,7 @@ extension ViewController: CellButtonDelegate {
 }
 
 extension ViewController: CollectionViewReloadDelegate {
+    
     func reload() {
         self.collectionView.reloadData()
         if contents.count == 0 {
@@ -184,6 +185,11 @@ extension ViewController: CollectionViewReloadDelegate {
     
     func layout() {
         self.collectionView.reloadData()
+    }
+    
+    func firebaseVCSegue() {
+        let vc = FirebaseViewController.instantiate()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

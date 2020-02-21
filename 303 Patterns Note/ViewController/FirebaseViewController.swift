@@ -10,7 +10,7 @@ import UIKit
 import Instantiate
 import InstantiateStandard
 
-class FirebaseViewController: UIViewController {
+class FirebaseViewController: UIViewController, StoryboardInstantiatable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
