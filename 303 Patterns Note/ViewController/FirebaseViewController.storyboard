@@ -22,14 +22,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-AR-QX9">
                                         <rect key="frame" x="0.0" y="0.0" width="229.5" height="30"/>
                                         <state key="normal" title="ストレージに保存"/>
+                                        <connections>
+                                            <action selector="saveContetns:" destination="pmP-tQ-uzP" eventType="touchUpInside" id="xKl-o9-FJu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waG-kY-AAI">
                                         <rect key="frame" x="249.5" y="0.0" width="229" height="30"/>
                                         <state key="normal" title="ストレージから取得"/>
+                                        <connections>
+                                            <action selector="getContents:" destination="pmP-tQ-uzP" eventType="touchUpInside" id="Mu0-RM-qel"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09i-Bu-9aP">
                                         <rect key="frame" x="498.5" y="0.0" width="229.5" height="30"/>
                                         <state key="normal" title="別のIDで取得"/>
+                                        <connections>
+                                            <action selector="getAnotherIDContents:" destination="pmP-tQ-uzP" eventType="touchUpInside" id="qDY-ih-kvO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,6 +76,9 @@
                         <viewLayoutGuide key="safeArea" id="9SW-Xt-mFq"/>
                     </view>
                     <navigationItem key="navigationItem" title="バックアップ" id="yrY-uX-hHh"/>
+                    <connections>
+                        <outlet property="userIDLabel" destination="9tN-Vi-Td7" id="Tac-DJ-3k0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehh-Jp-f8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

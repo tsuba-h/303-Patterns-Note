@@ -11,11 +11,21 @@ import Instantiate
 import InstantiateStandard
 
 class FirebaseViewController: UIViewController, StoryboardInstantiatable {
-
+    
+    @IBOutlet weak var userIDLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func saveContetns(_ sender: Any) {
+    }
+    
+    @IBAction func getContents(_ sender: Any) {
+    }
+    
+    @IBAction func getAnotherIDContents(_ sender: Any) {
+    }
 }
