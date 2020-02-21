@@ -190,6 +190,7 @@ extension ViewController: CollectionViewReloadDelegate {
     
     func firebaseVCSegue() {
         let vc = FirebaseViewController.instantiate()
+        vc.navigationItem.title = user.id
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

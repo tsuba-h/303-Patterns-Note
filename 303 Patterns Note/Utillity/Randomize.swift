@@ -13,7 +13,7 @@ struct Randomize {
     
     func generate() -> String {
         
-        let base: NSString = "abcdefghijklmnopqrstuvwxyz0123456789"
+        let base: NSString = "0123456789"
         let len = UInt32(base.length)
         var randomString:String = ""
         
