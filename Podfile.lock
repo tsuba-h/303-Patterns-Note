@@ -1,6 +1,9 @@
 PODS:
   - FontAwesome.swift (1.8.2)
   - IBAnimatable (6.0.0)
+  - Instantiate (4.0.0)
+  - InstantiateStandard (4.0.0):
+    - Instantiate (~> 4.0)
   - IQKeyboardManagerSwift (6.4.1)
   - Realm (3.17.3):
     - Realm/Headers (= 3.17.3)
@@ -11,24 +14,31 @@ PODS:
 DEPENDENCIES:
   - FontAwesome.swift
   - IBAnimatable
+  - Instantiate
+  - InstantiateStandard
   - IQKeyboardManagerSwift
   - RealmSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - FontAwesome.swift
     - IBAnimatable
     - IQKeyboardManagerSwift
     - Realm
     - RealmSwift
+  trunk:
+    - Instantiate
+    - InstantiateStandard
 
 SPEC CHECKSUMS:
   FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
   IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
   IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
   Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
   RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
 
-PODFILE CHECKSUM: 7f20e02dc017f03c53fc8961b87d8920b141faae
+PODFILE CHECKSUM: 536ce73f0408fc006ceee58ffd3c86efd7fdaba8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3

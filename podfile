@@ -9,5 +9,8 @@ target '303 Patterns Note' do
   pod ‘RealmSwift’
   pod 'FontAwesome.swift'
   pod 'IBAnimatable'
-  pod 'IQKeyboardManagerSwift'  
+  pod 'IQKeyboardManagerSwift'
+  pod 'Instantiate'
+  pod 'InstantiateStandard' 
+  
 end
