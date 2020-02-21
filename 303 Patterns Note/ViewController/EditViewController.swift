@@ -48,6 +48,9 @@ class EditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupTextFieldPadding()
+        
         seqCountLabel.text = String(seqCount)
         nextButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
         nextButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleRight), for: .normal)
@@ -342,19 +345,28 @@ class EditViewController: UIViewController {
     
 }
     
-    func titleAlert() {
+    private func titleAlert() {
         let alert = UIAlertController(title: "タイトルを入力してください", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
     
-    func noteAlert() {
+    private func noteAlert() {
         let alert = UIAlertController(title: "Noteを1つ以上入力してください", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+   
+    private func setupTextFieldPadding() {
+        
+        let titlePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: titleText.frame.size.height))
+        titleText.leftView = titlePaddingView
+        titleText.leftViewMode = .always
+        
+    }
+    
 }
 
 

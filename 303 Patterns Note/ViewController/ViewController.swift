@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     var contents: Results<Contents>!
     var sort = UserDefaults.standard.string(forKey: "sort") ?? "date"
+    let user = User()
     
     private let dateFormatter: DateFormatter = {
            let date = DateFormatter()
@@ -33,11 +34,11 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("sprt:::\(sort)")
+        print("sprt:::\(sort)","\(user.id)")
         do {
             let realm = try Realm()
             
-            print("realm保存場所",Realm.Configuration.defaultConfiguration.fileURL!)
+            //print("realm保存場所",Realm.Configuration.defaultConfiguration.fileURL!)
             contents = realm.objects(Contents.self).sorted(
                 byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
                 ascending: UserDefaults.standard.bool(forKey: "ascending"))

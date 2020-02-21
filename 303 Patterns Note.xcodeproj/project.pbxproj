@@ -30,6 +30,7 @@
 		2F2ACD3F23FEF80C00AC1D95 /* Randomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */; };
 		2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */; };
 		2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */; };
+		2F78783323FFD1650022D2E2 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783223FFD1650022D2E2 /* UserID.swift */; };
 		2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDE0A47233A6352002D43DB /* Color.xcassets */; };
 		2FFDB2612339241100BF7C44 /* ViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */; };
 		2FFDB2622339241100BF7C44 /* ViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */; };
@@ -63,6 +64,7 @@
 		2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomize.swift; sourceTree = "<group>"; };
 		2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseViewController.storyboard; sourceTree = "<group>"; };
 		2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
+		2F78783223FFD1650022D2E2 /* UserID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
 		2FDE0A47233A6352002D43DB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				2F13B0DC23202DEA00C96B5B /* Contents.swift */,
+				2F78783223FFD1650022D2E2 /* UserID.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				2F073C752345B44B006C4C22 /* MenuTableViewCell.swift in Sources */,
 				2F13B0CD23202A0100C96B5B /* ViewController.swift in Sources */,
 				2FFDB2612339241100BF7C44 /* ViewControllerCollectionViewCell.swift in Sources */,
+				2F78783323FFD1650022D2E2 /* UserID.swift in Sources */,
 				2F13B0CB23202A0100C96B5B /* AppDelegate.swift in Sources */,
 				2F13B0DD23202DEA00C96B5B /* Contents.swift in Sources */,
 				2F073C7A2345E7E0006C4C22 /* MenuViewController.swift in Sources */,
