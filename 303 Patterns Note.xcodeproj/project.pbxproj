@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,8 @@
 		2F215C59234BA8EA008E5821 /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F215C58234BA8EA008E5821 /* MenuHeader.swift */; };
 		2F215C5B234BA904008E5821 /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F215C5A234BA904008E5821 /* MenuHeader.xib */; };
 		2F2ACD3F23FEF80C00AC1D95 /* Randomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */; };
+		2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */; };
+		2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */; };
 		2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDE0A47233A6352002D43DB /* Color.xcassets */; };
 		2FFDB2612339241100BF7C44 /* ViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */; };
 		2FFDB2622339241100BF7C44 /* ViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */; };
@@ -59,6 +61,8 @@
 		2F215C58234BA8EA008E5821 /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
 		2F215C5A234BA904008E5821 /* MenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuHeader.xib; sourceTree = "<group>"; };
 		2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomize.swift; sourceTree = "<group>"; };
+		2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseViewController.storyboard; sourceTree = "<group>"; };
+		2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		2FDE0A47233A6352002D43DB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */,
 				2F13B0DE23202F6700C96B5B /* EditViewController.swift */,
 				2F13B0E02320301300C96B5B /* EditViewController.storyboard */,
+				2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */,
+				2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				2F215C5B234BA904008E5821 /* MenuHeader.xib in Resources */,
 				2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */,
 				2F13B0D223202A0200C96B5B /* Assets.xcassets in Resources */,
+				2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */,
 				2F02AA4B2331330200075CDC /* DSEG7Classic-Bold.ttf in Resources */,
 				2F073C762345B44B006C4C22 /* MenuTableViewCell.xib in Resources */,
 				2F13B0D023202A0100C96B5B /* Main.storyboard in Resources */,
@@ -303,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */,
 				2F215C59234BA8EA008E5821 /* MenuHeader.swift in Sources */,
 				2F13B0DF23202F6700C96B5B /* EditViewController.swift in Sources */,
 				2F02AA5323314F1200075CDC /* IBDesignable.swift in Sources */,
