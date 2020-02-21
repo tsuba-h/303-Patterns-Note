@@ -22,9 +22,9 @@ class ViewControllerCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
-        deleteButton.setTitle(String.fontAwesomeIcon(name: .trashAlt), for: .normal)
+//
+//        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+//        deleteButton.setTitle(String.fontAwesomeIcon(name: .trashAlt), for: .normal)
     }
 
     @IBAction func buttonTap(_ sender: Any) {

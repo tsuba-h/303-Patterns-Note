@@ -13,11 +13,12 @@ import InstantiateStandard
 class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
     @IBOutlet weak var userIDLabel: UILabel!
+    var userID: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userIDLabel.text = "UserID:\(userID)"
     }
     
     @IBAction func saveContetns(_ sender: Any) {
@@ -27,5 +28,15 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     }
     
     @IBAction func getAnotherIDContents(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "IDを入力してください", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+        }
+        let cancel = UIAlertAction(title: "キャンセル", style: .cancel)
+        
+        alert.addAction(cancel)
+        alert.addAction(action)
+        
+        self.present(alert, animated: false)
     }
 }

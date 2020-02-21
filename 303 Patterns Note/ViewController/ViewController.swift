@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         do {
             let realm = try Realm()
             
-            //print("realm保存場所",Realm.Configuration.defaultConfiguration.fileURL!)
             contents = realm.objects(Contents.self).sorted(
                 byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
                 ascending: UserDefaults.standard.bool(forKey: "ascending"))
@@ -190,7 +189,7 @@ extension ViewController: CollectionViewReloadDelegate {
     
     func firebaseVCSegue() {
         let vc = FirebaseViewController.instantiate()
-        vc.navigationItem.title = user.id
+        vc.userID = user.id!
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
