@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var sort = UserDefaults.standard.string(forKey: "sort") ?? "date"
     let user = User()
     
+    
     private let dateFormatter: DateFormatter = {
            let date = DateFormatter()
            date.dateFormat = "yyyy-MM-dd"
@@ -190,6 +191,7 @@ extension ViewController: CollectionViewReloadDelegate {
     func firebaseVCSegue() {
         let vc = FirebaseViewController.instantiate()
         vc.userID = user.id!
+        vc.contents = contents
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -9,16 +9,19 @@
 import UIKit
 import Instantiate
 import InstantiateStandard
+import RealmSwift
 
 class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
     @IBOutlet weak var userIDLabel: UILabel!
     var userID: String = ""
+    var contents: Results<Contents>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         userIDLabel.text = "UserID:\(userID)"
+        print(contents.count)
     }
     
     @IBAction func saveContetns(_ sender: Any) {
