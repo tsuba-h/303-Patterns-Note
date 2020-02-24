@@ -10,12 +10,14 @@ import UIKit
 import Instantiate
 import InstantiateStandard
 import RealmSwift
+import Firebase
 
 class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
     @IBOutlet weak var userIDLabel: UILabel!
     var userID: String = ""
     var contents: Results<Contents>!
+    var db: Firestore = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,18 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     }
     
     @IBAction func saveContetns(_ sender: Any) {
+        
+        //guard contents.count == 0 else {return}
+        
+        for content in contents {
+            fireStoreAddData(data: [
+                "Name": content.name,
+                "Date": content.date
+//                "Note": content.note,
+//                "UpDouwn": content.upDown,
+//                "AcSlide": content.acSlide
+            ])
+        }
     }
     
     @IBAction func getContents(_ sender: Any) {
@@ -42,4 +56,21 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
         
         self.present(alert, animated: false)
     }
+}
+
+extension FirebaseViewController {
+    
+    private func fireStoreAddData(data: [String: Any]) {
+        
+        let ref = Firestore.firestore()
+            .collection("UserID").document(userID)
+            .collection("Item")
+        
+        ref.addDocument(data: data) { (error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 }
