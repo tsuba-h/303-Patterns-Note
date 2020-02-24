@@ -12,5 +12,6 @@ target '303 Patterns Note' do
   pod 'IQKeyboardManagerSwift'
   pod 'Instantiate'
   pod 'InstantiateStandard' 
+  pod 'Firebase/Analytics'
   
 end

@@ -28,6 +28,7 @@
 		2F215C59234BA8EA008E5821 /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F215C58234BA8EA008E5821 /* MenuHeader.swift */; };
 		2F215C5B234BA904008E5821 /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F215C5A234BA904008E5821 /* MenuHeader.xib */; };
 		2F2ACD3F23FEF80C00AC1D95 /* Randomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */; };
+		2F2ACD41240435EB00AC1D95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */; };
 		2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */; };
 		2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */; };
 		2F78783323FFD1650022D2E2 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783223FFD1650022D2E2 /* UserID.swift */; };
@@ -63,6 +64,7 @@
 		2F215C58234BA8EA008E5821 /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
 		2F215C5A234BA904008E5821 /* MenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuHeader.xib; sourceTree = "<group>"; };
 		2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomize.swift; sourceTree = "<group>"; };
+		2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseViewController.storyboard; sourceTree = "<group>"; };
 		2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		2F78783223FFD1650022D2E2 /* UserID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
@@ -121,10 +123,10 @@
 			children = (
 				2F13B0CC23202A0100C96B5B /* ViewController.swift */,
 				2F13B0CE23202A0100C96B5B /* Main.storyboard */,
-				2F073C782345E7E0006C4C22 /* MenuViewController.swift */,
-				2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */,
 				2F13B0DE23202F6700C96B5B /* EditViewController.swift */,
 				2F13B0E02320301300C96B5B /* EditViewController.storyboard */,
+				2F073C782345E7E0006C4C22 /* MenuViewController.swift */,
+				2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */,
 				2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */,
 				2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */,
 			);
@@ -165,6 +167,7 @@
 				2F02AA4C233141FF00075CDC /* DSEG7Classic-Regular.ttf */,
 				2F02AA4E233149E000075CDC /* DSEG7Modern-Light.ttf */,
 				2F02AA5023314A0300075CDC /* DSEG7Modern-Bold.ttf */,
+				2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */,
 				2F13B0D623202A0200C96B5B /* Info.plist */,
 			);
 			path = "303 Patterns Note";
@@ -258,6 +261,7 @@
 				2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */,
 				2F13B0D223202A0200C96B5B /* Assets.xcassets in Resources */,
 				2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */,
+				2F2ACD41240435EB00AC1D95 /* GoogleService-Info.plist in Resources */,
 				2F02AA4B2331330200075CDC /* DSEG7Classic-Bold.ttf in Resources */,
 				2F073C762345B44B006C4C22 /* MenuTableViewCell.xib in Resources */,
 				2F13B0D023202A0100C96B5B /* Main.storyboard in Resources */,
