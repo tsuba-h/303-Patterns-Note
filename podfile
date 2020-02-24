@@ -13,5 +13,7 @@ target '303 Patterns Note' do
   pod 'Instantiate'
   pod 'InstantiateStandard' 
   pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   
 end
