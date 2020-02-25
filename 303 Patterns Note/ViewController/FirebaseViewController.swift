@@ -32,7 +32,9 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
         
         if resultsContents.count != 0 {
             HUD.show(.labeledProgress(title: "", subtitle: "データをアップロードしています。"))
-            saveButtonTaped()
+            deleteContents {
+                //self.saveButtonTaped()
+            }
         } else {
             HUD.flash(.label("データがありません。"), delay: 1.0)
         }
@@ -60,8 +62,23 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
 
 extension FirebaseViewController {
     
-    private func fireStoreAddData(data: [String: Any]) {
+    private func deleteContents(completion: @escaping () -> ()) {
+        print("count1")
+        let ref = Firestore.firestore()
+//        ref.collection("UserID").document(userID).delete { (error) in
+//            if let error = error {
+//                print(error.localizedDescription)
+//            } else {
+//                print("complete")
+//                completion()
+//            }
+//        }
         
+        ref.collection("UserID").document(userID).collection("Item").document().delete()
+    }
+    
+    private func fireStoreAddData(data: [String: Any]) {
+        print("count2")
         let ref = Firestore.firestore()
             .collection("UserID").document(userID)
             .collection("Item")
