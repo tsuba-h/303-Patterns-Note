@@ -28,15 +28,29 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
     @IBAction func saveContetns(_ sender: Any) {
         
-        //guard contents.count == 0 else {return}
+        if contents.count != 0 {
+            saveButtonTaped()
+        }
         
+    }
+    
+    private func saveButtonTaped() {
         for content in contents {
+            
+            var note = [String]()
+            var upDown = [String]()
+            var acSlide = [String]()
+            
+            content.note.forEach {note.append($0.note)}
+            content.upDown.forEach {upDown.append($0.updown)}
+            content.acSlide.forEach {acSlide.append($0.acSlide)}
+            
             fireStoreAddData(data: [
                 "Name": content.name,
-                "Date": content.date
-//                "Note": content.note,
-//                "UpDouwn": content.upDown,
-//                "AcSlide": content.acSlide
+                "Date": content.date,
+                "Note": note,
+                "UpDouwn": upDown,
+                "AcSlide": acSlide
             ])
         }
     }
