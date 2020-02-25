@@ -70,9 +70,9 @@ extension FirebaseViewController {
         ref.addDocument(data: data) { (error) in
             if let error = error {
                 print(error.localizedDescription)
-                HUD.hide()
+                HUD.flash(.labeledError(title: "Failed", subtitle: "アップロードに失敗しました。"), delay: 1.0)
             } else {
-                HUD.hide()
+                HUD.flash(.labeledSuccess(title: "Success!", subtitle: "アップロードに成功しました。"), delay: 1.0)
             }
         }
     }
@@ -116,11 +116,11 @@ extension FirebaseViewController {
         ref.getDocuments { (snapShot, error) in
             if let error = error {
                 print(error.localizedDescription)
-                HUD.flash(.labeledError(title: "", subtitle: "失敗しました。"), delay: 1.0)
+                HUD.flash(.labeledError(title: "Failed", subtitle: "失敗しました。"), delay: 1.0)
             } else {
                 guard let snapShot = snapShot else {return}
                 self.addContents(documents: snapShot.documents, realm: realm)
-                HUD.flash(.labeledSuccess(title: "", subtitle: "データを取得しました。"), delay: 1.0)
+                HUD.flash(.labeledSuccess(title: "Success!", subtitle: "データを取得しました。"), delay: 1.0)
             }
         }
     }
