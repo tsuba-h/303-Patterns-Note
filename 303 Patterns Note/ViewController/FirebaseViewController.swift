@@ -34,9 +34,8 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
             HUD.show(.labeledProgress(title: "", subtitle: "データをアップロードしています。"))
             saveButtonTaped()
         } else {
-            
+            HUD.flash(.label("データがありません。"), delay: 1.0)
         }
-        
     }
     
     
@@ -119,8 +118,13 @@ extension FirebaseViewController {
                 HUD.flash(.labeledError(title: "Failed", subtitle: "失敗しました。"), delay: 1.0)
             } else {
                 guard let snapShot = snapShot else {return}
-                self.addContents(documents: snapShot.documents, realm: realm)
-                HUD.flash(.labeledSuccess(title: "Success!", subtitle: "データを取得しました。"), delay: 1.0)
+                if snapShot.count == 0 {
+                    HUD.flash(.label("データがありません。"), delay: 1.0)
+                } else {
+                    self.addContents(documents: snapShot.documents, realm: realm)
+                    HUD.flash(.labeledSuccess(title: "Success!", subtitle: "データを取得しました。"), delay: 1.0)
+                }
+                
             }
         }
     }
