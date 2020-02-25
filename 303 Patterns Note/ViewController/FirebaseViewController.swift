@@ -11,6 +11,7 @@ import Instantiate
 import InstantiateStandard
 import RealmSwift
 import Firebase
+import PKHUD
 
 class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
@@ -29,6 +30,7 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     @IBAction func saveContetns(_ sender: Any) {
         
         if contents.count != 0 {
+            HUD.show(.labeledProgress(title: "", subtitle: "データをアップロードしています。"))
             saveButtonTaped()
         }
         
@@ -83,6 +85,9 @@ extension FirebaseViewController {
         ref.addDocument(data: data) { (error) in
             if let error = error {
                 print(error.localizedDescription)
+                HUD.hide()
+            } else {
+                HUD.hide()
             }
         }
     }
