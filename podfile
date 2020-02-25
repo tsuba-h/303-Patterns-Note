@@ -15,5 +15,6 @@ target '303 Patterns Note' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'PKHUD', '~> 5.0'
   
 end

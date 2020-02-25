@@ -274,6 +274,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - PKHUD (5.3.0)
   - PromisesObjC (1.2.8)
   - Realm (3.17.3):
     - Realm/Headers (= 3.17.3)
@@ -290,6 +291,7 @@ DEPENDENCIES:
   - Instantiate
   - InstantiateStandard
   - IQKeyboardManagerSwift
+  - PKHUD (~> 5.0)
   - RealmSwift
 
 SPEC REPOS:
@@ -321,6 +323,7 @@ SPEC REPOS:
     - InstantiateStandard
     - leveldb-library
     - nanopb
+    - PKHUD
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -348,10 +351,11 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
   RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
 
-PODFILE CHECKSUM: a6be8b2c5f5cb058ace7d6fae9eb017742259670
+PODFILE CHECKSUM: e23aff28a47ace5169299750a17e02e76e5ea979
 
 COCOAPODS: 1.8.3
