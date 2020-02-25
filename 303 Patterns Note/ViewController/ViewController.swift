@@ -191,7 +191,7 @@ extension ViewController: CollectionViewReloadDelegate {
     func firebaseVCSegue() {
         let vc = FirebaseViewController.instantiate()
         vc.userID = user.id!
-        vc.contents = contents
+        vc.resultsContents = contents
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

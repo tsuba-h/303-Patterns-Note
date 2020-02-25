@@ -17,47 +17,32 @@ class FirebaseViewController: UIViewController, StoryboardInstantiatable {
     
     @IBOutlet weak var userIDLabel: UILabel!
     var userID: String = ""
-    var contents: Results<Contents>!
+    var resultsContents: Results<Contents>!
     var db: Firestore = Firestore.firestore()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         userIDLabel.text = "UserID:\(userID)"
-        print(contents.count)
+        print(resultsContents.count)
     }
     
     @IBAction func saveContetns(_ sender: Any) {
         
-        if contents.count != 0 {
+        if resultsContents.count != 0 {
             HUD.show(.labeledProgress(title: "", subtitle: "データをアップロードしています。"))
             saveButtonTaped()
+        } else {
+            
         }
         
     }
     
-    private func saveButtonTaped() {
-        for content in contents {
-            
-            var note = [String]()
-            var upDown = [String]()
-            var acSlide = [String]()
-            
-            content.note.forEach {note.append($0.note)}
-            content.upDown.forEach {upDown.append($0.updown)}
-            content.acSlide.forEach {acSlide.append($0.acSlide)}
-            
-            fireStoreAddData(data: [
-                "Name": content.name,
-                "Date": content.date,
-                "Note": note,
-                "UpDouwn": upDown,
-                "AcSlide": acSlide
-            ])
-        }
-    }
     
     @IBAction func getContents(_ sender: Any) {
+        HUD.show(.labeledProgress(title: "", subtitle: "データを取得しています。"))
+        referenceContents()
     }
     
     @IBAction func getAnotherIDContents(_ sender: Any) {
@@ -92,4 +77,84 @@ extension FirebaseViewController {
         }
     }
     
+    private func saveButtonTaped() {
+        for content in resultsContents {
+            
+            var note = [String]()
+            var upDown = [String]()
+            var acSlide = [String]()
+            
+            content.note.forEach {note.append($0.note)}
+            content.upDown.forEach {upDown.append($0.updown)}
+            content.acSlide.forEach {acSlide.append($0.acSlide)}
+            
+            fireStoreAddData(data: [
+                "Name": content.name,
+                "Date": content.date,
+                "Note": note,
+                "UpDown": upDown,
+                "AcSlide": acSlide
+            ])
+        }
+    }
+    
+    
+    private func referenceContents() {
+        
+        let realm = try! Realm()
+        do {
+            try realm.write {
+                realm.deleteAll()
+            }
+        } catch {
+            print("error")
+        }
+        
+        let ref = Firestore.firestore()
+            .collection("UserID").document(userID).collection("Item")
+        
+        ref.getDocuments { (snapShot, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                HUD.flash(.labeledError(title: "", subtitle: "失敗しました。"), delay: 1.0)
+            } else {
+                guard let snapShot = snapShot else {return}
+                self.addContents(documents: snapShot.documents, realm: realm)
+                HUD.flash(.labeledSuccess(title: "", subtitle: "データを取得しました。"), delay: 1.0)
+            }
+        }
+    }
+    
+    
+    
+    private func addContents(documents: [QueryDocumentSnapshot], realm: Realm) {
+        for document in documents {
+            
+            let contents = Contents()
+            let snapShotValue = document.data()
+            contents.name = snapShotValue["Name"] as! String
+            contents.date = (snapShotValue["Date"] as! Timestamp).dateValue()
+            
+            (snapShotValue["Note"] as! [String]).forEach { (note) in
+                contents.note.append(Note(value: ["note": note]))
+            }
+            
+            (snapShotValue["UpDown"] as! [String]).forEach { (upDown) in
+                contents.upDown.append(UpDown(value: ["updown":upDown]))
+            }
+            
+            (snapShotValue["AcSlide"] as! [String]).forEach { (acSlide) in
+                contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
+            }
+            
+            
+            do {
+                try realm.write {
+                    realm.add(contents)
+                }
+            } catch {
+                print("realm_Error")
+            }
+        }
+    }
 }
