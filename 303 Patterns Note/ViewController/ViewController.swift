@@ -66,6 +66,7 @@ class ViewController: UIViewController {
     @IBAction func editViewSegue(_ sender: Any) {
         let storyboard = UIStoryboard(name: "EditViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        vc.id = Randomize().idGenerate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -100,7 +101,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 sendAcSlide.append(acSlides.acSlide)
             }
             
+            let i = contents[indexPath.row]
+            print(i)
+            
             vc.itemIndex = indexPath.row
+            vc.id = contents[indexPath.row].id
             vc.name = contents[indexPath.row].name
             vc.days = dateFormatter.string(from: contents[indexPath.row].date)
             vc.note = sendNote
@@ -188,12 +193,12 @@ extension ViewController: CollectionViewReloadDelegate {
         self.collectionView.reloadData()
     }
     
-    func firebaseVCSegue() {
-        let vc = FirebaseViewController.instantiate()
-        vc.userID = user.id!
-        vc.resultsContents = contents
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+//    func firebaseVCSegue() {
+//        let vc = FirebaseViewController.instantiate()
+//        vc.userID = user.id!
+//        vc.resultsContents = contents
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
     
 }
 

@@ -13,7 +13,7 @@ protocol CollectionViewReloadDelegate {
     func reload()
     func sorted()
     func layout()
-    func firebaseVCSegue()
+    //func firebaseVCSegue()
 }
 
 class MenuViewController: UIViewController {

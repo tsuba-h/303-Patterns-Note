@@ -21,6 +21,7 @@ class EditViewController: UIViewController {
     var udCount = 0
     var acSlideCount = [false,false]
     
+    var id: String?
     var days: String?
     var name: String?
     var note = [String](repeating: "", count: 16)
@@ -29,7 +30,6 @@ class EditViewController: UIViewController {
     
     var seqPointColor = UIColor(red: 245/255, green: 130/255, blue: 12/255, alpha: 1)
     
-
     private let mediumFeedbackGenerator: UIImpactFeedbackGenerator = {
         let generator = UIImpactFeedbackGenerator(style: .medium)
         generator.prepare()
@@ -50,18 +50,7 @@ class EditViewController: UIViewController {
         super.viewDidLoad()
         
         setupTextFieldPadding()
-        
-        seqCountLabel.text = String(seqCount)
-        nextButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        nextButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleRight), for: .normal)
-        backButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        backButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleLeft), for: .normal)
-        
-        seqCountLabel.layer.cornerRadius = 6.0
-        seqCountLabel.layer.shadowColor = UIColor.gray.cgColor
-        seqCountLabel.layer.shadowOpacity = 0.8
-        seqCountLabel.layer.shadowOffset = CGSize(width: 3, height: 6)
-    
+        setUpLayout()
         
         if itemIndex != nil {
             for count in 0...15 {
@@ -81,6 +70,21 @@ class EditViewController: UIViewController {
         udCountJudg()
         acSlideJudg()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+    }
+    
+    private func setUpLayout() {
+        
+        seqCountLabel.text = String(seqCount)
+        nextButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+        nextButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleRight), for: .normal)
+        backButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+        backButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleLeft), for: .normal)
+        
+        seqCountLabel.layer.cornerRadius = 6.0
+        seqCountLabel.layer.shadowColor = UIColor.gray.cgColor
+        seqCountLabel.layer.shadowOpacity = 0.8
+        seqCountLabel.layer.shadowOffset = CGSize(width: 3, height: 6)
+        
     }
     
     @IBAction func keyBoard(_ sender: Any) {
@@ -141,7 +145,7 @@ class EditViewController: UIViewController {
                 acSlideCount[1] = false
             }
         }
-    
+        
         switch acSlideCount {
         case [false, false]:
             acSlideText("")
@@ -218,7 +222,7 @@ class EditViewController: UIViewController {
             seqCount = 1
         }
         seqCountLabel.text = String(seqCount)
-       
+        
         seqColor()
         udCountJudg()
         acSlideJudg()
@@ -302,6 +306,7 @@ class EditViewController: UIViewController {
             noteAlert()
         } else {
             
+            contents.id = id!
             contents.name = titleText.text!
             contents.date = Date()
             for note in note {
@@ -330,7 +335,7 @@ class EditViewController: UIViewController {
                             realm.delete(results[itemCount].upDown)
                             realm.delete(results[itemCount].acSlide)
                             realm.delete(results[itemCount])
-
+                            
                             realm.add(contents)
                         }
                     }
@@ -342,8 +347,8 @@ class EditViewController: UIViewController {
             navigationController?.popViewController(animated: true)
         }
         
-    
-}
+        
+    }
     
     private func titleAlert() {
         let alert = UIAlertController(title: "タイトルを入力してください", message: "", preferredStyle: .alert)
@@ -358,7 +363,7 @@ class EditViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-   
+    
     private func setupTextFieldPadding() {
         
         let titlePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: titleText.frame.size.height))

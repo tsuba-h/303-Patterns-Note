@@ -25,4 +25,21 @@ struct Randomize {
         
         return randomString
     }
+    
+    
+    func idGenerate() -> String {
+        
+        let base: NSString = "abcdefghijklmnopqrstuvwxyz0123456789"
+        let len = UInt32(base.length)
+        var randomString:String = ""
+        
+        for _ in 0 ..< 9 {
+            let randomaize = arc4random_uniform(len)
+            var nextChar = base.character(at: Int(randomaize))
+            randomString += NSString(characters: &nextChar, length: 1) as String
+        }
+        
+        return randomString
+    }
+    
 }
