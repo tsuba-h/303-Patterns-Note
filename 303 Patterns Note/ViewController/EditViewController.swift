@@ -325,18 +325,17 @@ class EditViewController: UIViewController {
                         realm.add(contents)
                     }
                 } else {
-                    let results = realm.objects(Contents.self).sorted(
-                        byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
-                        ascending: UserDefaults.standard.bool(forKey: "ascending"))
-                    print(results[itemIndex!])
+                    
+                    let result = realm.objects(Contents.self).filter { $0.id == self.id}.first
+                    //print(result)
                     try realm.write {
-                        if let itemCount = itemIndex {
-                            realm.delete(results[itemCount].note)
-                            realm.delete(results[itemCount].upDown)
-                            realm.delete(results[itemCount].acSlide)
-                            realm.delete(results[itemCount])
+                        if let result = result {
                             
-                            realm.add(contents)
+                            realm.delete(result.note)
+                            realm.delete(result.upDown)
+                            realm.delete(result.acSlide)
+                            
+                            realm.add(contents, update: .all)
                         }
                     }
                 }
