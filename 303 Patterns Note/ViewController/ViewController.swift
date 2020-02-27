@@ -32,10 +32,16 @@ class ViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        saveContents()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(saveContents), name: NSNotification.Name(rawValue: "save"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print("sprt:::\(sort)","\(user.id)")
+    }
+    
+    @objc func saveContents() {
         do {
             let realm = try Realm()
             
@@ -52,6 +58,7 @@ class ViewController: UIViewController {
             notItemView.isHidden = true
             collectionView.reloadData()
         }
+        
     }
     
     @IBAction func sideMenuButton(_ sender: Any) {

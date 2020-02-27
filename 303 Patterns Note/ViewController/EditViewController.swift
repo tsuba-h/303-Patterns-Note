@@ -324,6 +324,7 @@ class EditViewController: UIViewController {
                     try  realm.write {
                         realm.add(contents)
                     }
+                    NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
                 } else {
                     
                     let result = realm.objects(Contents.self).filter { $0.id == self.id}.first
@@ -336,6 +337,7 @@ class EditViewController: UIViewController {
                             realm.delete(result.acSlide)
                             
                             realm.add(contents, update: .all)
+                            NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
                         }
                     }
                 }
