@@ -22,34 +22,28 @@
                         <rect key="frame" x="8" y="8" width="181" height="133"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuM-uY-dfv">
-                                <rect key="frame" x="0.0" y="86" width="181" height="1"/>
+                                <rect key="frame" x="0.0" y="89" width="181" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="mRn-E2-RmU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-02-21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
-                                <rect key="frame" x="46.5" y="95" width="88.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-02-21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o6b-9x-41K">
+                                <rect key="frame" x="47" y="98" width="87" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCz-k1-TkI">
-                                <rect key="frame" x="8" y="8" width="165" height="70"/>
+                                <rect key="frame" x="8" y="8" width="165" height="73"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-3Q-fIh">
-                                <rect key="frame" x="143" y="95" width="30" height="30"/>
+                                <rect key="frame" x="142" y="98" width="31" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="e5f-3Q-fIh" secondAttribute="height" multiplier="1:1" id="1GJ-wD-Ee4"/>
-                                    <constraint firstAttribute="width" constant="30" id="QG9-Xc-s7f">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="25"/>
-                                    </constraint>
                                 </constraints>
                                 <state key="normal" image="trash" catalog="system"/>
                                 <connections>
@@ -66,11 +60,12 @@
                             <constraint firstAttribute="trailing" secondItem="nuM-uY-dfv" secondAttribute="trailing" id="Fp1-OI-v05"/>
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="leading" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="8" id="OsW-rw-COP"/>
                             <constraint firstItem="wCz-k1-TkI" firstAttribute="top" secondItem="8dS-E6-4ik" secondAttribute="top" constant="8" id="TrD-G7-4B7"/>
-                            <constraint firstAttribute="bottom" secondItem="o6b-9x-41K" secondAttribute="bottom" constant="8" id="UzH-S0-psE"/>
+                            <constraint firstAttribute="bottom" secondItem="o6b-9x-41K" secondAttribute="bottom" constant="4" id="UzH-S0-psE"/>
+                            <constraint firstItem="e5f-3Q-fIh" firstAttribute="width" secondItem="8dS-E6-4ik" secondAttribute="width" multiplier="0.17" id="VUI-JJ-CZ2"/>
                             <constraint firstItem="o6b-9x-41K" firstAttribute="centerX" secondItem="8dS-E6-4ik" secondAttribute="centerX" id="XqZ-pD-E6E"/>
                             <constraint firstItem="o6b-9x-41K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8dS-E6-4ik" secondAttribute="leading" constant="4" id="jLf-2c-pam"/>
                             <constraint firstAttribute="trailing" secondItem="e5f-3Q-fIh" secondAttribute="trailing" constant="8" id="mHh-py-IY3"/>
-                            <constraint firstAttribute="bottom" secondItem="e5f-3Q-fIh" secondAttribute="bottom" constant="8" id="mzm-Zt-Vch"/>
+                            <constraint firstAttribute="bottom" secondItem="e5f-3Q-fIh" secondAttribute="bottom" constant="4" id="mzm-Zt-Vch"/>
                             <constraint firstItem="nuM-uY-dfv" firstAttribute="top" secondItem="wCz-k1-TkI" secondAttribute="bottom" constant="8" id="pdb-G8-efY"/>
                             <constraint firstItem="e5f-3Q-fIh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o6b-9x-41K" secondAttribute="trailing" constant="8" id="xFE-U2-h01"/>
                         </constraints>
