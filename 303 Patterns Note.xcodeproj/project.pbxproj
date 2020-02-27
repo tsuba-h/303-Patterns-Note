@@ -51,7 +51,7 @@
 		2F073C742345B44B006C4C22 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		2F073C782345E7E0006C4C22 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "303 Patterns Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F13B0C723202A0100C96B5B /* 303Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 303Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F13B0CA23202A0100C96B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F13B0CC23202A0100C96B5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F13B0CF23202A0100C96B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		2F13B0C823202A0100C96B5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */,
+				2F13B0C723202A0100C96B5B /* 303Note.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			);
 			name = "303 Patterns Note";
 			productName = "303 Patterns Note";
-			productReference = 2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */;
+			productReference = 2F13B0C723202A0100C96B5B /* 303Note.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -487,7 +487,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tuba.-03-Patterns-Note";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 303Note;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -506,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tuba.-03-Patterns-Note";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 303Note;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
