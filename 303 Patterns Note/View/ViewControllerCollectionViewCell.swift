@@ -20,6 +20,12 @@ class ViewControllerCollectionViewCell: UICollectionViewCell {
     
     var delegate: CellButtonDelegate!
     
+    private let mediumFeedbackGenerator: UIImpactFeedbackGenerator = {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
+        return generator
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 //
@@ -28,6 +34,7 @@ class ViewControllerCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func buttonTap(_ sender: Any) {
+        mediumFeedbackGenerator.impactOccurred()
         delegate.buttonTap(cell: self)
     }
 }
