@@ -294,56 +294,59 @@ class EditViewController: UIViewController {
         
         if titleText.text == "" {
             titleAlert()
+            return
         } else {
             note.forEach { (note) in
                 if note == "" {
                     count += 1
                 }
             }
-            if count == 16 {
-                noteAlert()
-            } else {
-                contents.id = id!
-                contents.name = titleText.text!
-                contents.date = Date()
-                for note in note {
-                    contents.note.append(Note(value: ["note":note]))
-                }
-                for upDown in upDown {
-                    contents.upDown.append(UpDown(value: ["updown":upDown]))
-                }
-                for acSlide in acSlide {
-                    contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
-                }
-                
-                do {
-                    if itemIndex == nil {
-                        try  realm.write {
-                            realm.add(contents)
-                        }
-                        NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
-                    } else {
-                        
-                        let result = realm.objects(Contents.self).filter { $0.id == self.id}.first
-              
-                        try realm.write {
-                            if let result = result {
-                                
-                                realm.delete(result.note)
-                                realm.delete(result.upDown)
-                                realm.delete(result.acSlide)
-                                
-                                realm.add(contents, update: .all)
-                                NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
-                            }
+        }
+        
+        if count == 16 {
+            noteAlert()
+            return
+        } else {
+            contents.id = id!
+            contents.name = titleText.text!
+            contents.date = Date()
+            for note in note {
+                contents.note.append(Note(value: ["note":note]))
+            }
+            for upDown in upDown {
+                contents.upDown.append(UpDown(value: ["updown":upDown]))
+            }
+            for acSlide in acSlide {
+                contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
+            }
+            
+            do {
+                if itemIndex == nil {
+                    try  realm.write {
+                        realm.add(contents)
+                    }
+                    NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
+                } else {
+                    
+                    let result = realm.objects(Contents.self).filter { $0.id == self.id}.first
+                    
+                    try realm.write {
+                        if let result = result {
+                            
+                            realm.delete(result.note)
+                            realm.delete(result.upDown)
+                            realm.delete(result.acSlide)
+                            
+                            realm.add(contents, update: .all)
+                            NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
                         }
                     }
-                } catch {
-                    print(error)
                 }
-                
-                navigationController?.popViewController(animated: true)
+            } catch {
+                print(error)
             }
+            
+            navigationController?.popViewController(animated: true)
         }
     }
     
