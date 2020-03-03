@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Crashlytics
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var menuButton: UIBarButtonItem!
     var contents: Results<Contents>!
     var sort = UserDefaults.standard.string(forKey: "sort") ?? "date"
+    let user = User()
+    
     
     private let dateFormatter: DateFormatter = {
            let date = DateFormatter()
@@ -30,24 +33,33 @@ class ViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        saveContents()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(saveContents), name: NSNotification.Name(rawValue: "save"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("sprt:::\(sort)")
+        print("sprt:::\(sort)","\(user.id)")
+    }
+    
+    @objc func saveContents() {
         do {
             let realm = try Realm()
+            
             contents = realm.objects(Contents.self).sorted(
                 byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
                 ascending: UserDefaults.standard.bool(forKey: "ascending"))
         } catch {
             print(error)
         }
-        collectionView.reloadData()
+        
         if contents.count == 0 {
             notItemView.isHidden = false
         } else {
             notItemView.isHidden = true
+            collectionView.reloadData()
         }
+        
     }
     
     @IBAction func sideMenuButton(_ sender: Any) {
@@ -62,6 +74,7 @@ class ViewController: UIViewController {
     @IBAction func editViewSegue(_ sender: Any) {
         let storyboard = UIStoryboard(name: "EditViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditViewController") as! EditViewController
+        vc.id = Randomize().idGenerate()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -96,12 +109,17 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
                 sendAcSlide.append(acSlides.acSlide)
             }
             
-            vc.itemCount = indexPath.row
+            let i = contents[indexPath.row]
+            print(i)
+            
+            vc.itemIndex = indexPath.row
+            vc.id = contents[indexPath.row].id
             vc.name = contents[indexPath.row].name
             vc.days = dateFormatter.string(from: contents[indexPath.row].date)
             vc.note = sendNote
             vc.upDown = sendUpDown
             vc.acSlide = sendAcSlide
+            
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -126,6 +144,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ViewController: CellButtonDelegate {
+    
     func buttonTap(cell: ViewControllerCollectionViewCell) {
         if let indexPath = collectionView.indexPath(for: cell) {
             let alert = UIAlertController(title: "このデータを削除してもよろしいですが？", message: "", preferredStyle: .alert)
@@ -158,6 +177,7 @@ extension ViewController: CellButtonDelegate {
 }
 
 extension ViewController: CollectionViewReloadDelegate {
+    
     func reload() {
         self.collectionView.reloadData()
         if contents.count == 0 {
@@ -180,6 +200,13 @@ extension ViewController: CollectionViewReloadDelegate {
     func layout() {
         self.collectionView.reloadData()
     }
+    
+//    func firebaseVCSegue() {
+//        let vc = FirebaseViewController.instantiate()
+//        vc.userID = user.id!
+//        vc.resultsContents = contents
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
     
 }
 

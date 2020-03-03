@@ -13,6 +13,7 @@ protocol CollectionViewReloadDelegate {
     func reload()
     func sorted()
     func layout()
+    //func firebaseVCSegue()
 }
 
 class MenuViewController: UIViewController {
@@ -126,6 +127,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             default:
                 return cell
             }
+//        case 2:
+//            cell.titleLabel.text = "サーバーに保存"
+//            cell.checkImage.isHidden = true
         case 2:
             cell.titleLabel.text = "データの全削除"
             cell.checkImage.isHidden = true
@@ -166,6 +170,9 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             default:
                 break
             }
+//        case 2:
+//            self.delegate.firebaseVCSegue()
+//            self.tableViewDismiss()
         case 2:
             do {
                 let realm = try Realm()
@@ -221,6 +228,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             return "並び順"
         case 1:
             return "表示数"
+//        case 2:
+//            return "サーバーに保存"
         case 2:
             return "データの削除"
         default:

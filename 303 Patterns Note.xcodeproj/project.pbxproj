@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,12 @@
 		2F13B0E12320301300C96B5B /* EditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F13B0E02320301300C96B5B /* EditViewController.storyboard */; };
 		2F215C59234BA8EA008E5821 /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F215C58234BA8EA008E5821 /* MenuHeader.swift */; };
 		2F215C5B234BA904008E5821 /* MenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F215C5A234BA904008E5821 /* MenuHeader.xib */; };
+		2F2ACD3F23FEF80C00AC1D95 /* Randomize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */; };
+		2F2ACD41240435EB00AC1D95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */; };
+		2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */; };
+		2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */; };
+		2F78783323FFD1650022D2E2 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783223FFD1650022D2E2 /* UserID.swift */; };
+		2F78783523FFECBE0022D2E2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F78783423FFECBE0022D2E2 /* RealmManager.swift */; };
 		2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDE0A47233A6352002D43DB /* Color.xcassets */; };
 		2FFDB2612339241100BF7C44 /* ViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */; };
 		2FFDB2622339241100BF7C44 /* ViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */; };
@@ -45,7 +51,7 @@
 		2F073C742345B44B006C4C22 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		2F073C782345E7E0006C4C22 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "303 Patterns Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F13B0C723202A0100C96B5B /* 303 Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "303 Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F13B0CA23202A0100C96B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F13B0CC23202A0100C96B5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F13B0CF23202A0100C96B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +63,12 @@
 		2F13B0E02320301300C96B5B /* EditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditViewController.storyboard; sourceTree = "<group>"; };
 		2F215C58234BA8EA008E5821 /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
 		2F215C5A234BA904008E5821 /* MenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuHeader.xib; sourceTree = "<group>"; };
+		2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomize.swift; sourceTree = "<group>"; };
+		2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseViewController.storyboard; sourceTree = "<group>"; };
+		2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
+		2F78783223FFD1650022D2E2 /* UserID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
+		2F78783423FFECBE0022D2E2 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		2FDE0A47233A6352002D43DB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		2FFDB25F2339241100BF7C44 /* ViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FFDB2602339241100BF7C44 /* ViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -111,10 +123,12 @@
 			children = (
 				2F13B0CC23202A0100C96B5B /* ViewController.swift */,
 				2F13B0CE23202A0100C96B5B /* Main.storyboard */,
-				2F073C782345E7E0006C4C22 /* MenuViewController.swift */,
-				2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */,
 				2F13B0DE23202F6700C96B5B /* EditViewController.swift */,
 				2F13B0E02320301300C96B5B /* EditViewController.storyboard */,
+				2F073C782345E7E0006C4C22 /* MenuViewController.swift */,
+				2F073C772345E7DF006C4C22 /* MenuViewController.storyboard */,
+				2F78783023FFCEFE0022D2E2 /* FirebaseViewController.swift */,
+				2F78782E23FFCEDE0022D2E2 /* FirebaseViewController.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -132,7 +146,7 @@
 		2F13B0C823202A0100C96B5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */,
+				2F13B0C723202A0100C96B5B /* 303 Note.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				2F13B0CA23202A0100C96B5B /* AppDelegate.swift */,
-				2F02AA5223314F1200075CDC /* IBDesignable.swift */,
-				2F13B0DC23202DEA00C96B5B /* Contents.swift */,
+				2F2ACD3D23FEF7D400AC1D95 /* Utillity */,
+				2F2ACD3C23FEF17500AC1D95 /* Model */,
 				2F073C7E23466456006C4C22 /* ViewController */,
 				2F073C7D23466435006C4C22 /* View */,
 				2F13B0D123202A0200C96B5B /* Assets.xcassets */,
@@ -153,9 +167,29 @@
 				2F02AA4C233141FF00075CDC /* DSEG7Classic-Regular.ttf */,
 				2F02AA4E233149E000075CDC /* DSEG7Modern-Light.ttf */,
 				2F02AA5023314A0300075CDC /* DSEG7Modern-Bold.ttf */,
+				2F2ACD40240435EB00AC1D95 /* GoogleService-Info.plist */,
 				2F13B0D623202A0200C96B5B /* Info.plist */,
 			);
 			path = "303 Patterns Note";
+			sourceTree = "<group>";
+		};
+		2F2ACD3C23FEF17500AC1D95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F13B0DC23202DEA00C96B5B /* Contents.swift */,
+				2F78783223FFD1650022D2E2 /* UserID.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2F2ACD3D23FEF7D400AC1D95 /* Utillity */ = {
+			isa = PBXGroup;
+			children = (
+				2F02AA5223314F1200075CDC /* IBDesignable.swift */,
+				2F2ACD3E23FEF80C00AC1D95 /* Randomize.swift */,
+				2F78783423FFECBE0022D2E2 /* RealmManager.swift */,
+			);
+			path = Utillity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +204,7 @@
 				2F13B0C423202A0000C96B5B /* Frameworks */,
 				2F13B0C523202A0000C96B5B /* Resources */,
 				DF6D4019D12FA7564DD5ED56 /* [CP] Embed Pods Frameworks */,
+				2F57F0D52408E41B0098A837 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,7 +212,7 @@
 			);
 			name = "303 Patterns Note";
 			productName = "303 Patterns Note";
-			productReference = 2F13B0C723202A0100C96B5B /* 303 Patterns Note.app */;
+			productReference = 2F13B0C723202A0100C96B5B /* 303 Note.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -226,6 +261,8 @@
 				2F215C5B234BA904008E5821 /* MenuHeader.xib in Resources */,
 				2FDE0A48233A6352002D43DB /* Color.xcassets in Resources */,
 				2F13B0D223202A0200C96B5B /* Assets.xcassets in Resources */,
+				2F78782F23FFCEDE0022D2E2 /* FirebaseViewController.storyboard in Resources */,
+				2F2ACD41240435EB00AC1D95 /* GoogleService-Info.plist in Resources */,
 				2F02AA4B2331330200075CDC /* DSEG7Classic-Bold.ttf in Resources */,
 				2F073C762345B44B006C4C22 /* MenuTableViewCell.xib in Resources */,
 				2F13B0D023202A0100C96B5B /* Main.storyboard in Resources */,
@@ -238,6 +275,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F57F0D52408E41B0098A837 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
 		7215419A3D3BE0CF5EABA64E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,24 +320,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-303 Patterns Note/Pods-303 Patterns Note-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
-				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-303 Patterns Note/Pods-303 Patterns Note-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-303 Patterns Note/Pods-303 Patterns Note-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -297,15 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F78783523FFECBE0022D2E2 /* RealmManager.swift in Sources */,
+				2F78783123FFCEFE0022D2E2 /* FirebaseViewController.swift in Sources */,
 				2F215C59234BA8EA008E5821 /* MenuHeader.swift in Sources */,
 				2F13B0DF23202F6700C96B5B /* EditViewController.swift in Sources */,
 				2F02AA5323314F1200075CDC /* IBDesignable.swift in Sources */,
 				2F073C752345B44B006C4C22 /* MenuTableViewCell.swift in Sources */,
 				2F13B0CD23202A0100C96B5B /* ViewController.swift in Sources */,
 				2FFDB2612339241100BF7C44 /* ViewControllerCollectionViewCell.swift in Sources */,
+				2F78783323FFD1650022D2E2 /* UserID.swift in Sources */,
 				2F13B0CB23202A0100C96B5B /* AppDelegate.swift in Sources */,
 				2F13B0DD23202DEA00C96B5B /* Contents.swift in Sources */,
 				2F073C7A2345E7E0006C4C22 /* MenuViewController.swift in Sources */,
+				2F2ACD3F23FEF80C00AC1D95 /* Randomize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +497,10 @@
 			baseConfigurationReference = 33233A54F8277574A1731F8B /* Pods-303 Patterns Note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Z5BC87SB57;
 				INFOPLIST_FILE = "303 Patterns Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,9 +508,10 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tuba.-03-Patterns-Note";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "303 Note";
+				PROVISIONING_PROFILE_SPECIFIER = "303PatternsNote-dev";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,7 +520,10 @@
 			baseConfigurationReference = D2BFBCA11C7D87313CB4B7BB /* Pods-303 Patterns Note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = Z5BC87SB57;
 				INFOPLIST_FILE = "303 Patterns Note/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,9 +531,10 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tuba.-03-Patterns-Note";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "303 Note";
+				PROVISIONING_PROFILE_SPECIFIER = "303PatternsNote-dev";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,5 +9,13 @@ target '303 Patterns Note' do
   pod ‘RealmSwift’
   pod 'FontAwesome.swift'
   pod 'IBAnimatable'
-  pod 'IQKeyboardManagerSwift'  
+  pod 'IQKeyboardManagerSwift'
+  pod 'Instantiate'
+  pod 'InstantiateStandard' 
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'PKHUD', '~> 5.0'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.14.0'  
 end

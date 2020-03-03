@@ -20,12 +20,15 @@ class EditViewController: UIViewController {
     var seqCount = 1
     var udCount = 0
     var acSlideCount = [false,false]
+    
+    var id: String?
+    var days: String?
+    var name: String?
     var note = [String](repeating: "", count: 16)
     var upDown = [String](repeating: "", count: 16)
     var acSlide = [String](repeating: "", count: 16)
+    
     var seqPointColor = UIColor(red: 245/255, green: 130/255, blue: 12/255, alpha: 1)
-    var days: String?
-    var name: String?
     
     private let mediumFeedbackGenerator: UIImpactFeedbackGenerator = {
         let generator = UIImpactFeedbackGenerator(style: .medium)
@@ -41,23 +44,15 @@ class EditViewController: UIViewController {
     
     let realm = try! Realm()
     let contents = Contents()
-    var itemCount: Int?
+    var itemIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        seqCountLabel.text = String(seqCount)
-        nextButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        nextButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleRight), for: .normal)
-        backButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
-        backButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleLeft), for: .normal)
         
-        seqCountLabel.layer.cornerRadius = 6.0
-        seqCountLabel.layer.shadowColor = UIColor.gray.cgColor
-        seqCountLabel.layer.shadowOpacity = 0.8
-        seqCountLabel.layer.shadowOffset = CGSize(width: 3, height: 6)
-    
+        setupTextFieldPadding()
+        setUpLayout()
         
-        if itemCount != nil {
+        if itemIndex != nil {
             for count in 0...15 {
                 noteLabel[count].text = note[count]
                 downUpLabel[count].text = upDown[count]
@@ -75,6 +70,21 @@ class EditViewController: UIViewController {
         udCountJudg()
         acSlideJudg()
         print(Realm.Configuration.defaultConfiguration.fileURL!)
+    }
+    
+    private func setUpLayout() {
+        
+        seqCountLabel.text = String(seqCount)
+        nextButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+        nextButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleRight), for: .normal)
+        backButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .solid)
+        backButton.setTitle(String.fontAwesomeIcon(name: .angleDoubleLeft), for: .normal)
+        
+        seqCountLabel.layer.cornerRadius = 6.0
+        seqCountLabel.layer.shadowColor = UIColor.gray.cgColor
+        seqCountLabel.layer.shadowOpacity = 0.8
+        seqCountLabel.layer.shadowOffset = CGSize(width: 3, height: 6)
+        
     }
     
     @IBAction func keyBoard(_ sender: Any) {
@@ -135,7 +145,7 @@ class EditViewController: UIViewController {
                 acSlideCount[1] = false
             }
         }
-    
+        
         switch acSlideCount {
         case [false, false]:
             acSlideText("")
@@ -212,7 +222,7 @@ class EditViewController: UIViewController {
             seqCount = 1
         }
         seqCountLabel.text = String(seqCount)
-       
+        
         seqColor()
         udCountJudg()
         acSlideJudg()
@@ -280,74 +290,88 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: Any) {
+        var count = 0
+        
         if titleText.text == "" {
             titleAlert()
+            return
         } else {
-            var count = 0
-            for noteItem in note {
-                if noteItem == "" {
+            note.forEach { (note) in
+                if note == "" {
                     count += 1
                 }
             }
-            if count == 16 {
-                noteAlert()
-            } else {
-                contents.name = titleText.text!
-                contents.date = Date()
-                for note in note {
-                    contents.note.append(Note(value: ["note":note]))
-                }
-                for upDown in upDown {
-                    contents.upDown.append(UpDown(value: ["updown":upDown]))
-                }
-                for acSlide in acSlide {
-                    contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
-                }
-
-                do {
-                    if itemCount == nil {
-                        try  realm.write {
-                            realm.add(contents)
-                        }
-                    } else {
-                        let results = realm.objects(Contents.self).sorted(
-                            byKeyPath: UserDefaults.standard.string(forKey: "sort") ?? "date",
-                            ascending: UserDefaults.standard.bool(forKey: "ascending"))
-                        print(results[itemCount!])
-                        try realm.write {
-                            if let itemCount = itemCount {
-                                realm.delete(results[itemCount].note)
-                                realm.delete(results[itemCount].upDown)
-                                realm.delete(results[itemCount].acSlide)
-                                realm.delete(results[itemCount])
-                                
-                                realm.add(contents)
-                            }
-                        }
-                    }
-                } catch {
-                    print(error)
-                }
-                
-                navigationController?.popViewController(animated: true)
-            }
         }
         
+        if count == 16 {
+            noteAlert()
+            return
+        } else {
+            contents.id = id!
+            contents.name = titleText.text!
+            contents.date = Date()
+            for note in note {
+                contents.note.append(Note(value: ["note":note]))
+            }
+            for upDown in upDown {
+                contents.upDown.append(UpDown(value: ["updown":upDown]))
+            }
+            for acSlide in acSlide {
+                contents.acSlide.append(AcSlide(value: ["acSlide":acSlide]))
+            }
+            
+            do {
+                if itemIndex == nil {
+                    try  realm.write {
+                        realm.add(contents)
+                    }
+                    NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
+                } else {
+                    
+                    let result = realm.objects(Contents.self).filter { $0.id == self.id}.first
+                    
+                    try realm.write {
+                        if let result = result {
+                            
+                            realm.delete(result.note)
+                            realm.delete(result.upDown)
+                            realm.delete(result.acSlide)
+                            
+                            realm.add(contents, update: .all)
+                            NotificationCenter.default.post(name: NSNotification.Name("save"), object: nil)
+                        }
+                    }
+                }
+            } catch {
+                print(error)
+            }
+            
+            navigationController?.popViewController(animated: true)
+        }
     }
     
-    func titleAlert() {
+    private func titleAlert() {
         let alert = UIAlertController(title: "タイトルを入力してください", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
     
-    func noteAlert() {
+    private func noteAlert() {
         let alert = UIAlertController(title: "Noteを1つ以上入力してください", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
+    private func setupTextFieldPadding() {
+        
+        let titlePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: titleText.frame.size.height))
+        titleText.leftView = titlePaddingView
+        titleText.leftViewMode = .always
+        
+    }
+    
 }
 
 

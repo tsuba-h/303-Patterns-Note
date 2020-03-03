@@ -20,14 +20,21 @@ class ViewControllerCollectionViewCell: UICollectionViewCell {
     
     var delegate: CellButtonDelegate!
     
+    private let mediumFeedbackGenerator: UIImpactFeedbackGenerator = {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
+        return generator
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 23, style: .solid)
-        deleteButton.setTitle(String.fontAwesomeIcon(name: .trashAlt), for: .normal)
+//
+//        deleteButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 20, style: .solid)
+//        deleteButton.setTitle(String.fontAwesomeIcon(name: .trashAlt), for: .normal)
     }
 
     @IBAction func buttonTap(_ sender: Any) {
+        mediumFeedbackGenerator.impactOccurred()
         delegate.buttonTap(cell: self)
     }
 }
